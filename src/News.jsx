@@ -5,7 +5,7 @@ import Header from './Components/Header';
 function MyComponent() {
     const [data, setData] = useState(null);
     const cacheKey = 'newsData';
-    let apikey = JSON.stringify(import.meta.env)
+    let apikey = JSON.stringify(import.meta.env.VITE_NEWS_API_KEY)
 
     useEffect(() => {
         // Check if data is already in cache
@@ -27,7 +27,7 @@ function MyComponent() {
                 localStorage.setItem(cacheKey, JSON.stringify(cacheData));
             }
 
-            // fetchData();
+            fetchData();
         }
     }, []);
 
