@@ -20,7 +20,7 @@ const Bot = () => {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                'X-RapidAPI-Key': 'f7e1ac9a26mshc1fd6aafa865effp165760jsn7f9b09cc106f',
+                'X-RapidAPI-Key': `${JSON.stringify(import.meta.env.VITE_BOT_API_KEY)}`,
                 'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
             },
             body: JSON.stringify({
@@ -28,9 +28,7 @@ const Bot = () => {
                 messages: [
                     { role: 'user', content: requestMessage },
                     { role: 'system', content: `greet the user with level of experience in stocks and finance suggest the user with keywords based on experience in human natural way. and dont respond to other topics ` },
-                    { role: 'user', content: requestMessage },
-                    { role: 'system', content: `teach the user with level of experience. and dont answer the topics that are not related to stocks and finance` },
-
+                    { role: 'user', content: requestMessage }
                 ]
             })
         };
