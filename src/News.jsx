@@ -5,8 +5,7 @@ import Header from './Components/Header';
 function MyComponent() {
     const [data, setData] = useState(null);
     const cacheKey = 'newsData';
-    let apikey = JSON.stringify(import.meta.env.VITE_NEWS_API_KEY)
-
+    let apikey = import.meta.env.VITE_NEWS_API_KEY
     useEffect(() => {
         // Check if data is already in cache
         const cachedData = JSON.parse(localStorage.getItem(cacheKey));
@@ -14,7 +13,6 @@ function MyComponent() {
             setData(cachedData.data);
         } else {
             async function fetchData() {
-                console.log(apikey)
                 const category = 'business';
                 const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=100&apikey=${apikey}`;
 
