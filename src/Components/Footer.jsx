@@ -7,7 +7,7 @@ function Footer() {
             <div className='w-full p-8 xs:w-full sm: md:w-1/2 lg:w-1/2 xl:w-1/2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  sm:py-12 md:py-12 lg:py-12 xl:py-12'>
                 {/*  */}
                 <div className=''>
-                    <h1 className='text-white text-xl font-semibold'>Stock Signals</h1>
+                    <h1 className='text-white text-xl font-semibold'>DhanVitta</h1>
                     <p className='text-gray-300 text-xs font-normal mt-1'>Copyright © 2023</p>
 
                 </div>
