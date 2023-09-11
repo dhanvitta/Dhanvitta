@@ -52,10 +52,12 @@ function MyComponent() {
     }, [data]);
 
     const detectSentiment = async (text) => {
-        const url = `https://sentiverse.vercel.app/api/v1/sentiment/${text}`;
+        const encodedText = encodeURIComponent(text);
+        const url = `https://sentiverse.vercel.app/api/v1/sentiment/${encodedText}`;
+        console.log(encodeURIComponent(text))
         const response = await fetch(url);
         const data = await response.json();
-        const emotion = data.data.emotion;
+        const emotion = data.data?.emotion;
         return emotion;
     }
 
@@ -95,11 +97,11 @@ function MyComponent() {
 
                                         <div className='flex flex-row items-center '>
                                             <FiAlertCircle className='text-sm text-gray-500' />
-                                            {sentimentsList[id] == 'Positive 😁🙂' ? (
+                                            {sentimentsList[id] == 'Positive' ? (
                                                 <h1 className='text-sm text-emerald-500 font-normal ml-1'>{sentimentsList[id]}</h1>
 
                                             ) : (
-                                                sentimentsList[id] == 'Neutral 😶' ? (
+                                                sentimentsList[id] == 'Neutral' ? (
                                                     <h1 className='text-sm text-yellow-500 font-normal ml-1'>{sentimentsList[id]}</h1>
                                                 ) : (
                                                     <h1 className='text-sm text-red-500 font-normal ml-1'>{sentimentsList[id]}</h1>
