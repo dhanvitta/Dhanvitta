@@ -36,7 +36,6 @@ const Bot = () => {
         try {
             const response = await fetch('https://openai80.p.rapidapi.com/chat/completions', options);
             const data = await response.json();
-            console.log(data);
             const generatedAnswer = data.choices[0]?.message?.content;
             setResponse(generatedAnswer);
         } catch (error) {
