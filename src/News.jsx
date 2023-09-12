@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiAlertCircle, FiClock, FiFileText } from "react-icons/fi";
 import Header from './Components/Header';
+import gsap from "gsap";
 
 function MyComponent() {
 
@@ -35,6 +36,20 @@ function MyComponent() {
     }, []);
 
     useEffect(() => {
+        const animateArticles = () => {
+            const articles = document.querySelectorAll('.article');
+            gsap.from(articles, {
+                y: 50,
+                opacity: 0,
+                stagger: 0.2, // Stagger the animations
+                duration: 0.5,
+                ease: 'power3.out',
+                onComplete: () => {
+                    // Animation completed
+                },
+            });
+        };
+
         if (data && data.articles) {
             const sentimentPromises = data.articles.map(async (article) => {
                 const sentiment = await detectSentiment(article.title);
@@ -44,12 +59,18 @@ function MyComponent() {
             Promise.all(sentimentPromises)
                 .then((sentiments) => {
                     setSentimentsList(sentiments);
+                    animateArticles();
+
                 })
                 .catch((error) => {
                     console.error("Error fetching sentiments:", error);
                 });
         }
     }, [data]);
+
+
+
+
 
     const detectSentiment = async (text) => {
         const encodedText = encodeURIComponent(text);
@@ -62,7 +83,7 @@ function MyComponent() {
     }
 
     if (!data) {
-        return <div>Loading...</div>;
+        return <div className='text-4xl w-full h-full fixed flex items-center justify-center'>Loading...</div>;
     }
 
     const colSpan = Math.floor(Math.random() * 3) + 1;
@@ -72,7 +93,7 @@ function MyComponent() {
             <div className='bg-gray-50 w-11/12 m-auto grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-8'>
                 {data?.articles?.map((data, id) => {
                     return (
-                        <div className={`col-span-${colSpan} relative group  shadow-sm overflow-hidden border border-gray-100  transform-gpu cursor-pointer hover:border-gray-300 p-6  flex flex-row items-start rounded-xl min-w-24 bg-white`} key={id}>
+                        <div className={`article col-span-${colSpan} relative group  shadow-sm overflow-hidden border border-gray-100  transform-gpu cursor-pointer hover:border-gray-300 p-6  flex flex-row items-start rounded-xl min-w-24 bg-white`} key={id}>
                             {/* <div className='border-2 border-blue-500 h-8 w-1 bg-blue-500 rounded-full'></div> */}
 
                             <div className='flex flex-col items-start'>
