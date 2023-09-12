@@ -19,15 +19,15 @@ function HeroSection() {
 
                 <div className=' hidden xs:hidden sm:hidden md:hidden lg:grid xl:grid grid-cols-3 grid-rows-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
                     {/*  */}
-                    <div className='bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
+                    <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
                         <FiTrendingUp className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
                     </div>
 
-                    <div className='bg-slate-900 h-1/2 p-8 rounded-3xl  flex items-center justify-center -rotate-6 group cursor-pointer ease-in-out'>
+                    <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl  flex items-center justify-center -rotate-6 group cursor-pointer ease-in-out'>
                         <FiShield className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
                     </div>
 
-                    <div className='bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
+                    <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
                         <FiPieChart className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
 
                     </div>
