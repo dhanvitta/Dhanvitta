@@ -41,7 +41,7 @@ function Advantanges() {
                         <div className={`${style} mb-12 xs:mb-12 sm:mb-12 md:mb-12 lg:mb-0 xl:mb-0`} key={id}>
 
                             <div className=''>
-                                <div className='p-4 h-18 w-18 rounded-full flex items-start justify-center bg-yellow-300 mr-8'>
+                                <div className='p-4 h-18 w-18 rounded-full flex items-start justify-center bg-blue-300 mr-8'>
                                     <FiTrendingUp className='text-lg font-bold  ' />
                                 </div>
                             </div>
