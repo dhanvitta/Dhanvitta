@@ -13,22 +13,22 @@ function HeroSection() {
                     <h2 className='text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl  my-8'>with DhanVitta</h2>
                     <p className=' break-words text-lg font-normal  tracking-normal align-middle w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6'>Revolutionize Your Trading with RealTime AI Suggestions, Expert Analysis, and Interactive Learning Resources to Help You Trade with Confidence!</p>
                     <div className='w-full xs:w-full sm:w-full m:w-1/2 lg:w-1/2 xl:w-1/2'>
-                        <Link to={"https://dhanvitta.graphy.com/"}>  <button className='mt-8 px-6  w-full h-16 rounded-3xl bg-slate-900 hover:text-blue-300 text-md text-white '>Start Learning</button> </Link>
+                        <Link to={"https://dhanvitta.graphy.com/"}>  <button className='mt-8 px-6  w-full h-16 rounded-3xl bg-slate-900 hover:text-yellow-300 text-md text-white '>Start Learning</button> </Link>
                     </div>
                 </div>
 
                 <div className=' hidden xs:hidden sm:hidden md:hidden lg:grid xl:grid grid-cols-3 grid-rows-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
                     {/*  */}
                     <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
-                        <FiTrendingUp className='text-white text-8xl group-hover:text-blue-300 group-hover:-mt-8' />
+                        <FiTrendingUp className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
                     </div>
 
                     <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl  flex items-center justify-center -rotate-6 group cursor-pointer ease-in-out'>
-                        <FiShield className='text-white text-8xl group-hover:text-blue-300 group-hover:-mt-8' />
+                        <FiShield className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
                     </div>
 
                     <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
-                        <FiPieChart className='text-white text-8xl group-hover:text-blue-300 group-hover:-mt-8' />
+                        <FiPieChart className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
 
                     </div>
 
