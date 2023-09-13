@@ -35,7 +35,7 @@ function LearnSection() {
         <div className='w-11/12 mx-auto my-28 py-8 grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  bg-[#f9fafb]'>
             <div className='flex items-center justify-center  '>
                 <div className=' bg-[#f9fafb] '>
-                    <h1 className='text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl  font-extrabold leading-normal text-slate-900 mb-12' >WHAT YOU’LL GET AS A <span className='text-slate-500  -rotate-12'>RESULT</span></h1>
+                    <h1 className='text-4xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl  font-extrabold leading-normal text-slate-900 mb-12' >WHAT YOU’LL GET AS A <span className='text-blue-300  -rotate-12'>RESULT</span></h1>
                     {/* <button className='rounded-full p-4 px-8 bg-[#c6e912] text-slate-900 font-semibold text-lg'>Get Started</button> */}
                 </div>
             </div>
