@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -15,20 +15,20 @@ function Footer() {
                 <div className='my-8 sm:my-8 md:my-0 lg:my-0 xl:my-0'>
                     <h1 className='text-md font-semibold text-white mb-4'>Resources</h1>
                     <div className='text-white'>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>News</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Support</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Blog</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>News</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Support</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Blog</h6></Link>
                     </div>
                 </div>
                 {/*  */}
                 <div className=''>
                     <h1 className='text-md font-semibold text-white mb-4'>Company</h1>
                     <div className='text-white'>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>About</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Careers</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Privacy</h6></Link>
-                        <Link to=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>terms</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>About</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Careers</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Privacy</h6></Link>
+                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>terms</h6></Link>
                     </div>
                 </div>
 
