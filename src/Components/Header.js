@@ -37,6 +37,8 @@ function Header() {
                                 <Link className='w-full' href='/news'> <p className='hover:text-blue-500   w-full py-8 text-lg border-b cursor-pointer'>News</p></Link>
                                 <Link className='w-full' href='/news'><p className='hover:text-blue-500   w-full py-8 text-lg border-b cursor-pointer'>Blogs</p></Link>
                                 <Link className='w-full' href='/news'><p className='hover:text-blue-500  w-full  py-8 text-lg border-b cursor-pointer'>About Us</p></Link>
+                                <Link className='w-full' href='/news'><p className='hover:text-blue-500  w-full  py-8 text-lg border-b cursor-pointer'>Products</p></Link>
+
                             </div>
 
                             <div className='w-full  flex items-center justify-start py-8'>
