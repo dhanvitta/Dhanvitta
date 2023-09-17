@@ -1,9 +1,9 @@
 "use client";
-import Advantanges from '@/Components/Advantages'
-import Footer from '@/Components/Footer'
-import Header from '@/Components/Header'
-import HeroSection from '@/Components/HeroSection'
-import LearnSection from '@/Components/LearnSection'
+import Advantanges from '@/app/Components/Advantages'
+import Footer from '@/app/Components/Footer'
+import Header from '@/app/Components/Header'
+import HeroSection from '@/app/Components/HeroSection'
+import LearnSection from '@/app/Components/LearnSection'
 import Image from 'next/image'
 import React from 'react'
 
