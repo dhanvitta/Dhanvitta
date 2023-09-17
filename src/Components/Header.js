@@ -15,7 +15,9 @@ function Header() {
                     <Link href='/learn'><p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Learn with AI</p></Link>
                     <Link href='/news'> <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
                     <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p>
+                    <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Products</p>
                     <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>About Us</p>
+
                 </div>
                 <div className='w-1/2 flex items-center justify-end '>
                     <button className='px-6 py-3 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button>
