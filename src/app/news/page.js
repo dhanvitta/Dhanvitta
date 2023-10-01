@@ -1,8 +1,9 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import { FiAlertCircle, FiClock, FiFileText } from "react-icons/fi";
-import Header from './Components/Header';
 import gsap from "gsap";
 import Image from 'next/image';
+import Header from '../Components/Header';
 
 function MyComponent() {
 
@@ -10,7 +11,7 @@ function MyComponent() {
     const [sentimentsList, setSentimentsList] = useState([]);
     const cacheKey = 'newsData';
 
-    let apikey = import.meta.env.VITE_NEWS_API_KEY
+    let apikey = process.env.NEXT_PUBLIC_NEWS_API_KEY
 
 
     useEffect(() => {
