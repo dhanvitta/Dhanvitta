@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiAlertCircle, FiClock, FiFileText } from "react-icons/fi";
 import gsap from "gsap";
-import Image from 'next/image';
 import Header from '../Components/Header';
 
 function MyComponent() {
@@ -12,7 +11,6 @@ function MyComponent() {
     const cacheKey = 'newsData';
 
     let apikey = process.env.NEXT_PUBLIC_NEWS_API_KEY
-
 
     useEffect(() => {
         // Check if data is already in cache
@@ -85,7 +83,7 @@ function MyComponent() {
     }
 
     if (!data) {
-        return <div className='text-4xl w-full h-full fixed flex items-center justify-center'>Loading...</div>;
+        return <div className='text-4xl w-full h-full fixed flex items-center justify-center animate-pulse'>Loading...</div>;
     }
 
     const colSpan = Math.floor(Math.random() * 3) + 1;
@@ -99,10 +97,15 @@ function MyComponent() {
                             {/* <div className='border-2 border-blue-500 h-8 w-1 bg-blue-500 rounded-full'></div> */}
 
                             <div className='flex flex-col items-start'>
-                                <Image src={data?.image} className="h-36 w-full rounded-lg object-cover object-center group-hover:grayscale-0 bg-gray-800 flex items-center justify-center" height="24" width={2} alt={"image"} onError={(e) => {
-                                    e.target.onerror = null;
-                                    e.target.src = `https://fakeimg.pl/350x200/?text=${data?.source.name}&font=lobster`;
-                                }} />
+                                <img src={data?.image}
+                                    className="h-36 w-full rounded-lg object-cover object-center group-hover:grayscale-0 bg-gray-800 flex items-center justify-center"
+                                    height={24} width={350}
+                                    alt={"image"}
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = `https://fakeimg.pl/350x200/?text=${data?.source.name}&font=lobster`
+                                    }}
+                                />
 
                                 <div className='flex flex-row flex-wrap items-center justify-start mt-6 mb-2 '>
                                     <div className='flex flex-row w-full'>
