@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { FiAlignRight, FiTrendingUp } from "react-icons/fi";
 import Link from 'next/link'
@@ -14,7 +15,7 @@ function Header() {
                 <div className='flex flex-row items-center  justify-center mt-4 xs:mt-6 sm:mt-0 md:mt-0 lg:mt-0 text-sm text-slate-900 w-full '>
                     <Link href='/learn'><p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Learn with AI</p></Link>
                     <Link href='/news'> <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
-                    <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p>
+                    <Link href='/blogs'> <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link>
                     <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Products</p>
                     <p className='hover:text-blue-500 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>About Us</p>
 
