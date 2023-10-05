@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiAlertCircle, FiClock, FiFileText } from "react-icons/fi";
 import gsap from "gsap";
-import Header from '../Components/Header';
+import Header from '../../Components/Header';
 
 function MyComponent() {
 
