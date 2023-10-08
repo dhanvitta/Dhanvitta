@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiAlignRight, FiTrendingUp } from "react-icons/fi";
 function Footer() {
     return (
-        <div className='w-full bg-slate-950 py-12 flex items-center justify-center bottom-0 '>
+        <div className='w-full bg-slate-950 py-12 flex items-center justify-center bottom-0'>
             <div className='w-full p-8 xs:w-full sm: md:w-1/2 lg:w-1/2 xl:w-1/2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  sm:py-12 md:py-12 lg:py-12 xl:py-12 items-center justify-center'>
                 {/*  */}
                 <div className='flex items-start flex-col'>
