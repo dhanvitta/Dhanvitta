@@ -21,7 +21,7 @@ function Header() {
 
                 </div>
                 <div className='w-1/2 flex items-center justify-end '>
-                    <button className='px-6 py-3 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button>
+                    <Link className='w-full' href='/contact'>   <button className='px-6 py-3 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
 
                 </div>
             </div >
@@ -47,7 +47,7 @@ function Header() {
                             </div>
 
                             <div className='w-full  flex items-center justify-start py-8'>
-                                <button className='w-full h-16 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button>
+                                <Link className='w-full' href='/contact'>  <button className='w-full h-16 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
 
                             </div>
                         </React.Fragment >) : ''}
