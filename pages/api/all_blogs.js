@@ -11,10 +11,16 @@ export default async function handler(req, res) {
         throw new Error("Cannot find Notion Access Token or Notion Database Id")
     }
 
-    const pageId = 'c40b5d4383fc421ab9c8170922746345';
-    const response = await notion.pages.retrieve({ page_id: pageId });
+    // const pageId = 'c40b5d43-83fc-421a-b9c8-170922746345';
 
-    console.log(response);
+    const query = await notion.databases.query({
+        database_id: notionDatabaseId,
+    })
+    const rows = query.results.map((data) => {
+        return data.properties
+    });
 
-    res.status(200).json({ message: response })
+    console.table(rows);
+
+    res.status(200).json({ message: rows })
 }
