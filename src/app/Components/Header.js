@@ -40,7 +40,7 @@ function Header() {
                             <div className='flex flex-col items-start  justify-between  text-sm text-slate-900 w-full h-full py-8 '>
                                 <Link className='w-full' href='/'> <p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Learn with AI</p></Link>
                                 <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>News</p></Link>
-                                <Link className='w-full' href='/'><p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Blogs</p></Link>
+                                <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Blogs</p></Link>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>About Us</p></Link>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>Products</p></Link>
                                 <Link className='w-full' href='/contact'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>Contact Us</p></Link>
