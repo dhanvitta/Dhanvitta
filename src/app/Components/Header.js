@@ -16,7 +16,7 @@ function Header() {
                     <div className='flex flex-row items-center  justify-center mt-4 xs:mt-6 sm:mt-0 md:mt-0 lg:mt-0 text-sm text-slate-900 w-full '>
                         <Link href='/'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Learn with AI</p></Link>
                         <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
-                        <Link href='/'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link>
+                        <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link>
                         <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Products</p>
                         <Link href='/contact'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
 
@@ -40,7 +40,7 @@ function Header() {
                             <div className='flex flex-col items-start  justify-between  text-sm text-slate-900 w-full h-full py-8 '>
                                 <Link className='w-full' href='/'> <p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Learn with AI</p></Link>
                                 <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>News</p></Link>
-                                <Link className='w-full' href='/'><p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Blogs</p></Link>
+                                <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-8 text-lg border-b cursor-pointer'>Blogs</p></Link>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>About Us</p></Link>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>Products</p></Link>
                                 <Link className='w-full' href='/contact'><p className='hover:text-gray-900  w-full  py-8 text-lg border-b cursor-pointer'>Contact Us</p></Link>

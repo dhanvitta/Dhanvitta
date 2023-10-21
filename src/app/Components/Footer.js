@@ -24,7 +24,7 @@ function Footer() {
                 {/*  */}
                 <div className=''>
                     <h1 className='text-md font-semibold text-white mb-4'>Company</h1>
-                    <div className='text-white flex flex-row gap-3'>
+                    <div className='text-white flex flex-row sm:flex-cols gap-3'>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>About</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Careers</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Privacy Policy</h6></Link>
