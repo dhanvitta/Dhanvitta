@@ -1,7 +1,6 @@
 "use client"
 
 import BlogCard from "@/app/Components/blog/blogCard";
-import Footer from "@/app/Components/Footer";
 import Header from "@/app/Components/Header";
 import Image from "next/image";
 import React from "react";
