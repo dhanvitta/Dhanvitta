@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react'
-import { FiTrendingUp, FiShield, FiClock, FiDollarSign, FiPieChart } from "react-icons/fi";
+import React from 'react'
+import { FiTrendingUp, FiShield, FiPieChart } from "react-icons/fi";
 import Link from 'next/link'
 
 function HeroSection() {
@@ -28,10 +28,7 @@ function HeroSection() {
 
                     <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
                         <FiPieChart className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
-
                     </div>
-
-
                 </div>
 
             </div>

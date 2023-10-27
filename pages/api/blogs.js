@@ -4,8 +4,6 @@ const notionDatabaseId = process.env.NOTION_DATABASE_ID
 
 const client = new Client({ auth: notionAccessToken });
 
-// console.log(client)
-
 export default async function handler(req, res) {
 
     if (!notionAccessToken || !notionDatabaseId) {
