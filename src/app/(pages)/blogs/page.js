@@ -2,7 +2,6 @@
 
 import BlogCard from "@/app/Components/blog/blogCard";
 import Header from "@/app/Components/Header";
-import Image from "next/image";
 import React from "react";
 import useSWR from 'swr';
 import { fetcher } from "@/app/utils/utils";
@@ -28,8 +27,6 @@ export default function Blogs() {
                     {data && data?.message?.map((blog, id) => (
                         <BlogCard key={id} blog={blog} />
                     ))}
-
-
 
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FiAlignRight, FiTrendingUp } from "react-icons/fi";
+import { FiTrendingUp } from "react-icons/fi";
 function Footer() {
     return (
         <div className='w-full bg-slate-950 py-12 flex items-center justify-center bottom-0'>

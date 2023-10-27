@@ -11,8 +11,6 @@ export default async function handler(req, res) {
         throw new Error("Cannot find Notion Access Token or Notion Database Id")
     }
 
-    // const pageId = 'c40b5d43-83fc-421a-b9c8-170922746345';
-
     const query = await notion.databases.query({
         database_id: notionDatabaseId,
     })
