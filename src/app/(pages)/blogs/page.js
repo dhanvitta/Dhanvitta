@@ -25,7 +25,7 @@ export default function Blogs() {
 
                 {/* Layout */}
                 <div className="p-2 sm:p-2 md:p-8 lg:p-8 xl:p-8 flex flex-wrap w-full gap-8 static mt-6">
-                    {!data ? (
+                    {data ? (
                         data?.message?.map((blog, id) => (
                             <BlogCard key={id} blog={blog} />
                         ))
