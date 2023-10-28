@@ -8,7 +8,7 @@ export default function BlogCard({ blog }) {
         <div className="basis-80 flex-1 shadow-sm rounded-xl border overflow-hidden hover:shadow-md cursor-pointer group">
             <div className=" flex flex-col ">
                 <div className="w-full flex flex-col">
-                    <div className={`p-8 border-b group-hover:bg-yellow-50`}>
+                    <div className={`p-8 border-b bg-yellow-50 group-hover:bg-sky-50`}>
                         <div className="">
                             <h1 className="text-sm font-medium text-slate-500 text-left rounded-lg">{blog?.Added?.date?.start.split('T')[0]}</h1>
                         </div>
