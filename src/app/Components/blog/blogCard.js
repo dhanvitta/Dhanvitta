@@ -5,7 +5,6 @@ import Tags from "./tags";
 
 export default function BlogCard({ blog }) {
     return (
-
         <div className="basis-80 flex-1 shadow-sm rounded-xl border overflow-hidden hover:shadow-md cursor-pointer group">
             <div className=" flex flex-col ">
                 <div className="w-full flex flex-col">
