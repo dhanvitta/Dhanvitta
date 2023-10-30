@@ -24,7 +24,6 @@ function MyComponent() {
                 const response = await fetch(url);
                 const data = await response.json();
                 setData(data);
-                console.log(data)
                 // Save data to cache
                 const cacheData = { data, timestamp: Date.now() };
                 localStorage.setItem(cacheKey, JSON.stringify(cacheData));
