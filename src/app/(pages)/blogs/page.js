@@ -20,7 +20,6 @@ export default function Blogs() {
                     <h1 className="text-2xl italic text-gray-800 font-normal">Blogs</h1>
                     <h2 className="text-md italic text-gray-600 font-normal mt-2">Get unlimited access to the best of blogs.</h2>
                 </div>
-
                 {/* Layout */}
                 <div className="p-2 sm:p-2 md:p-8 lg:p-8 xl:p-8 flex flex-wrap w-full gap-8 static mt-6">
                     {data ? (
