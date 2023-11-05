@@ -10,7 +10,6 @@ export default async function handler(req, res) {
     if (!notionAccessToken || !notionDatabaseId) {
         throw new Error("Cannot find Notion Access Token or Notion Database Id")
     }
-
     const query = await notion.databases.query({
         database_id: notionDatabaseId,
     })
