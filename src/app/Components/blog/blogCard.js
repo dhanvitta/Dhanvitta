@@ -5,7 +5,7 @@ import Tags from "./tags";
 
 export default function BlogCard({ blog }) {
     return (
-        <div className="basis-80 flex-1 shadow-sm rounded-xl border overflow-hidden hover:shadow-md cursor-pointer group">
+        <div className="basis-80 flex-1 shadow-sm rounded-xl border overflow-hidden hover:shadow-md cursor-pointer group z-50">
             <div className=" flex flex-col ">
                 <div className="w-full flex flex-col">
                     <div className={`p-8 border-b bg-yellow-50 group-hover:bg-sky-50`}>
@@ -25,7 +25,7 @@ export default function BlogCard({ blog }) {
                         </div>
                     </div>
 
-                    <div className="px-8 py-6">
+                    <div className="px-8 py-6 bg-white">
                         <p className="text-sm font-normal text-gray-600 line-clamp-2 leading-normal">{blog?.description?.rich_text[0]?.plain_text}</p>
                     </div>
                 </div>
