@@ -5,13 +5,15 @@ import Header from '@/app/Components/Header'
 import HeroSection from '@/app/Components/HeroSection'
 import LearnSection from '@/app/Components/LearnSection'
 import React from 'react'
+import Section from './Components/Section';
 
 export default function Home() {
   return (
     <React.Fragment>
       <Header />
       <HeroSection />
-      <LearnSection />
+      <Section />
+      {/* <LearnSection /> */}
       <Advantanges />
       <Footer />
     </React.Fragment>
