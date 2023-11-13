@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Section />
-      {/* <LearnSection /> */}
+      <LearnSection />
       <Advantanges />
       <Footer />
     </React.Fragment>

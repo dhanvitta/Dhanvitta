@@ -7,6 +7,7 @@ function HeroSection() {
     return (
         <React.Fragment>
             <div className='w-11/12 mx-auto  bg-yellow-300 rounded-3xl p-8 xs:p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 my-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
+
                 <div className='flex flex-col w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6 '>
                     <h1 className=' text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl  font-semibold ' >Master the Art of Stock Trading  </h1>
                     <h2 className='text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl  my-6'>with DhanVitta</h2>
