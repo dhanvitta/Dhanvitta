@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import { FiTrendingUp, FiShield, FiPieChart } from "react-icons/fi";
 
 function Section() {
 
@@ -38,18 +39,19 @@ function Section() {
 
     return (
         <div className='w-11/12 mx-auto my-28 py-8 flex flex-col bg-white rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8'>
+
             <div className='flex items-center justify-center '>
                 <div className='px-0'>
-                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl  font-semibold leading-normal text-slate-900 mb-12 flex flex-col text-center ' >Accelerate your move to <span className='text-yellow-300 my-2  '>Dhanvitta</span> learning platform.</h1>
+                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-semibold leading-normal text-slate-900 mb-12 flex flex-col text-center ' >Accelerate your move to <span className='text-yellow-300 my-2  '>Dhanvitta</span> learning platform.</h1>
 
                     {/* <button className='rounded-full p-4 px-8 bg-[#c6e912] text-slate-900 font-semibold text-lg'>Get Started</button> */}
                 </div>
             </div>
-            <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-8 z-0 sticky top-0 bg-white '>
+            <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-12 z-10 sticky top-0 bg-white '>
                 {
                     learnPoints.map(({ title, description, ref } = item, id) => (
                         <div className={`sticky top-28  m-0 p-4 rounded-xl bg-white  `} key={id} ref={(el) => (learnPoints[id].ref = el)} >
-                            <div className=' z-0 top-8 left-8 p-8 h-12 w-12 bg-yellow-300 text-slate-900 flex items-center justify-center font-extrabold text-xl rounded-r-3xl mb-2  shadow-sm' >{id + 1}</div>
+                            <div className=' z-0 top-8 left-8 p-8 h-12 w-12 bg-yellow-300 text-slate-900 flex items-center justify-center font-extrabold text-;g rounded-r-3xl mb-2  shadow-sm' >{id + 1}</div>
                             <h1 className='mt-8 text-md font-semibold text-md mb-2 text-slate-900'>{title}</h1>
                             <p className='text-sm text-gray-600 bg-white'>{description}</p>
 
@@ -58,6 +60,7 @@ function Section() {
 
                 }
             </div>
+
         </div>
     )
 }
