@@ -44,7 +44,6 @@ function Section() {
                 <div className='px-0'>
                     <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-semibold leading-normal text-slate-900 mb-12 flex flex-col text-center ' >Accelerate your move to <span className='text-yellow-300 my-2  '>Dhanvitta</span> learning platform.</h1>
 
-
                 </div>
             </div>
             <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-12 z-10 sticky top-0 bg-white '>
