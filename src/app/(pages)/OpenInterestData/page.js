@@ -12,7 +12,7 @@ export default function OpenInterestPage() {
         revalidateOnFocus: false,
         revalidateOnReconnect: false
     });
-    console.log(data)
+
 
     if (error) return <div>Failed to load</div>
     if (isValidating) return <div className="h-screen w-full flex items-center justify-center text-2xl animate-pulse flex-col">Fetching Open Interest Data ... <span className="rounded-md bg-gray-900 text-white mt-5 animate-spin h-6 w-6 "></span></div>
