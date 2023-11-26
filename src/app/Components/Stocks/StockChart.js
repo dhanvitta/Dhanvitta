@@ -6,11 +6,11 @@ const StockChartRecharts = ({ data }) => {
 
 
     return (
-        <ResponsiveContainer width="100%" height={400}>
+        <ResponsiveContainer width="100%" height={400} className="w-fit">
             <BarChart
                 data={data}
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-                className="text-xs text-gray-900"
+                className="text-xs text-gray-900 border px-0 py-8 rounded-xl bg-white "
             >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="strike_price" />
@@ -23,14 +23,14 @@ const StockChartRecharts = ({ data }) => {
                     dataKey="calls_change_oi"
                     name="Calls Change in OI"
                     fill="#ef4444"
-                /> 
+                />
                 <Bar
                     dataKey="puts_change_oi"
                     name="Puts Change in OI"
                     fill="#22c55e"
 
                 />
-                <Brush dataKey="strike_price" height={20} stroke="#93c5fd" />
+                <Brush dataKey="strike_price" height={30} stroke="#475569" alwaysShowText={true} />
             </BarChart>
         </ResponsiveContainer>
     );
