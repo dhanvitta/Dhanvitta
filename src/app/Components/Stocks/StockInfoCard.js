@@ -1,7 +1,6 @@
 import MiniCards from "./MiniCards"
 
 function StockInfoCard({ data }) {
-
     const { symbol_name, close } = data.nifty50
 
     return (
@@ -21,8 +20,6 @@ function StockInfoCard({ data }) {
                             <MiniCards keyName={key} value={value} />
                         </>
                     ))}
-
-
                 </div>
             </div>
         </>
