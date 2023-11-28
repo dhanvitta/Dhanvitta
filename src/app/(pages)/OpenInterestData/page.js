@@ -40,8 +40,8 @@ export default function OpenInterestPage() {
     return (
         <React.Fragment>
             <Header />
-            <div className='w-full  bg-slate-100 '>
-                <div className='mx-auto w-1/2 py-12'>
+            <div className=' w-full  bg-slate-100 '>
+                <div className='mx-auto w-11/12 h-screen'>
                     <StockInfoCard data={data2} />
                     <StockChartRecharts data={data1?.data} />
                 </div >
