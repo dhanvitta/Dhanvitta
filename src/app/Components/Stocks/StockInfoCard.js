@@ -1,4 +1,4 @@
-import MiniCards from "./miniCards"
+import MiniCards from "./MiniCards"
 
 function StockInfoCard({ data }) {
     console.log(data);
