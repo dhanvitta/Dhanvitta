@@ -45,15 +45,6 @@ export default function OpenInterestPage() {
                 <div className='mx-auto w-1/2 py-12'>
                     <StockInfoCard data={data2} />
                     <StockChartRecharts data={data1?.data} />
-                    {/* {
-                        data?.data?.map((data, index) =>
-                            <div className='ml-4 border flex flex-row w-fit' key={index}>
-                                <h1 className='text-md'>{data.strike_price}</h1>
-                                <h1 className='text-sm mx-2 text-green-500'>{data.puts_change_oi}</h1>
-                                <h1 className='text-sm mx-2 text-red-500'>{data.calls_change_oi}</h1>
-                            </div >
-                        )
-                    } */}
                 </div >
             </div>
         </React.Fragment>
