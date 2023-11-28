@@ -1,7 +1,7 @@
 import MiniCards from "./MiniCards"
 
 function StockInfoCard({ data }) {
-    console.log(data);
+
     const { symbol_name, close } = data.nifty50
 
     return (

@@ -2,8 +2,6 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Brush, ReferenceLine } from 'recharts';
 
 const StockChartRecharts = ({ data }) => {
-    console.log(data)
-
 
     return (
 

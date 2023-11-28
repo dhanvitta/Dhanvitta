@@ -1,6 +1,5 @@
 
 function MiniCards({ keyName, value }) {
-    console.log(value)
 
     keyName == 'symbol_name' ? keyName = "Symbol" : null
     keyName == 'prev_price' ? keyName = "Previous Price" : null
