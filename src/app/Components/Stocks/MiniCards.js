@@ -1,11 +1,12 @@
 
 function MiniCards({ keyName, value }) {
-    console.log(value)
 
     keyName == 'symbol_name' ? keyName = "Symbol" : null
     keyName == 'prev_price' ? keyName = "Previous Price" : null
     keyName == 'last_trade_price' ? keyName = "Last Trade Price" : null
     keyName == 'created_at' ? keyName = "Created At" : null
+    keyName == 'created_at' ? value = value.split('T')[0] : null
+
 
     return (
         <div className='flex flex-col py-4 px-6  '>

@@ -4,7 +4,6 @@ import useSWR from 'swr';
 import { fetcher } from "@/app/utils/utils";
 import StockChartRecharts from '@/app/Components/Stocks/StockChart';
 import Header from '@/app/Components/Header';
-import MiniCards from '@/app/Components/Stocks/miniCards';
 import StockInfoCard from '@/app/Components/Stocks/StockInfoCard';
 
 export default function OpenInterestPage() {
