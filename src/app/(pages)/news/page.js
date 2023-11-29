@@ -73,7 +73,6 @@ function MyComponent() {
     const detectSentiment = async (text) => {
         const encodedText = encodeURIComponent(text);
         const url = `https://sentiverse.vercel.app/api/v1/sentiment/${encodedText}`;
-        console.log(encodeURIComponent(text))
         const response = await fetch(url);
         const data = await response.json();
         const emotion = data.data?.emotion;
