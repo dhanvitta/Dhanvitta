@@ -6,9 +6,7 @@ function MiniCards({ keyName, value }) {
     keyName == 'last_trade_price' ? keyName = "Last trade price" : null
     keyName == 'change_value' ? keyName = "Change value" : null
     keyName == 'change_per' ? keyName = "Change per" : null
-
     keyName === 'created_at' && (keyName = 'Created At', value = value.split('T')[0]);
-
 
     return (
         <div className='flex flex-col '>
