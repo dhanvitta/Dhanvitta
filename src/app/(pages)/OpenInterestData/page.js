@@ -5,6 +5,7 @@ import { fetcher } from "@/app/utils/utils";
 import { StockChartRecharts, OpenInterestChart } from '@/app/Components/Stocks/StockChart';
 import Header from '@/app/Components/Header';
 import StockInfoCard from '@/app/Components/Stocks/StockInfoCard';
+import StockTable from '@/app/Components/Stocks/StockTable';
 
 export default function OpenInterestPage() {
 
@@ -49,6 +50,8 @@ export default function OpenInterestPage() {
                         <StockChartRecharts data={data1?.data} />
                         <OpenInterestChart data={dataOI} />
                     </div>
+                    {/* <StockTable data={data1?.data} /> */}
+
                 </div >
             </div>
         </React.Fragment>
