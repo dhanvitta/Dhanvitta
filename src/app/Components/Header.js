@@ -14,10 +14,10 @@ function Header() {
                 <div className='top-0 sticky z-50  bg-white hidden xs:hidden sm:hidden md:hidden lg:flex xl:flex flex-row items-center justify-between py-3 font-normal px-0 w-full mx-auto xs:w-full sm:w-full md:w-full lg:w-11/12 xl-11/12'>
                     <div className='w-1/4 '><Link className='w-full' href='/'><div className='flex items-center flex-col w-28 rounded text-md font-medium p-2 text-gray-900 '> <FiTrendingUp className='text-xl mr-2 ' /> Dhanvitta</div></Link></div>
                     <div className='flex flex-row items-center  justify-center mt-4 xs:mt-6 sm:mt-0 md:mt-0 lg:mt-0 text-sm text-slate-900 w-full '>
-                        <Link href='/'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Learn with AI</p></Link>
-                        <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
-                        <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link>
+                        <Link href='/'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Home</p></Link>
                         <Link href='/oi-data'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>OI Data</p></Link>
+                        <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link>
+                        <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
                         <Link href='/contact'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
 
                     </div>
@@ -38,11 +38,11 @@ function Header() {
                     toggleState ? (
                         <React.Fragment >
                             <div className='flex flex-col items-start justify-start text-sm text-slate-900 w-full  py-6 h-screen'>
-                                <Link className='w-full' href='/'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>Learn with AI</p></Link>
+                                <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>Home</p></Link>
+                                <Link className='w-full' href='/oi-data'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>OI Data</p></Link>
                                 <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link>
                                 <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>Blogs</p></Link>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>About Us</p></Link>
-                                <Link className='w-full' href='/oi-data'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>OI Data</p></Link>
                                 <Link className='w-full' href='/contact'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>
 
                                 <div className='w-full flex items-center justify-start py-6'>
