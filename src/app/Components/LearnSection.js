@@ -5,11 +5,11 @@ function LearnSection() {
     const learnPoints = [
         {
             title: 'Gain Confidence and Trade Successfully',
-            description: 'Access the latest market trends and insights for informed trading decisions.',
+            description: 'Access the latest market trends and insights.',
             ref: useRef(null)
         },
         {
-            title: 'Learn Faster and Smarter with AI-Powered',
+            title: 'Learn Faster and Smarter',
             description: 'Get real-time suggestions for effective learning and faster progress.',
             ref: useRef(null)
         },
