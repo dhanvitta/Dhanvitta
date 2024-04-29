@@ -22,7 +22,7 @@ function Header() {
 
                     </div>
                     <div className='w-1/2 flex items-center justify-end '>
-                        <Link className='' href='/contact'>   <button className='px-6 py-3 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
+                        <Link className='' href='https://courses.dhanvitta.com'>   <button className='px-6 py-3 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
 
                     </div>
                 </div >
@@ -46,7 +46,7 @@ function Header() {
                                 <Link className='w-full' href='/contact'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>
 
                                 <div className='w-full flex items-center justify-start py-6'>
-                                    <Link className="flex flex-1" href='/contact'>  <button className='w-full h-16 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
+                                    <Link className="flex flex-1" href='https://courses.dhanvitta.com'>  <button className='w-full h-16 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
                                 </div>
                             </div>
 
