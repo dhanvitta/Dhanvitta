@@ -58,7 +58,7 @@ function SectionDetails() {
         {
             id: '3',
             data: { label: 'Shares' },
-            position: { x: 200, y: 200 },
+            position: { x: 100, y: 250 },
         },
         {
             id: '4',
@@ -78,7 +78,7 @@ function SectionDetails() {
         {
             id: '7',
             data: { label: 'Put Option | Call Option' },
-            position: { x: 400, y: 350 },
+            position: { x: 500, y: 350 },
         },
         {
             id: '8',
@@ -94,6 +94,16 @@ function SectionDetails() {
             id: '10',
             data: { label: 'Scalp Trading' },
             position: { x: 400, y: 600 },
+        },
+        {
+            id: '11',
+            data: { label: 'Buying' },
+            position: { x: 100, y: 400 },
+        },
+        {
+            id: '12',
+            data: { label: 'Selling' },
+            position: { x: 280, y: 400 },
         },
     ];
 
@@ -111,6 +121,24 @@ function SectionDetails() {
             }, type: 'bezier'
         },
         {
+            id: '2-3', source: '2', target: '3', label: '', style: {
+                strokeWidth: 2,
+                stroke: '#3b82f6',
+            }, type: 'bezier'
+        },
+        {
+            id: '3-11', source: '3', target: '11', label: '', style: {
+                strokeWidth: 2,
+                stroke: '#3b82f6',
+            }, type: 'bezier'
+        },
+        {
+            id: '3-12', source: '3', target: '12', label: '', style: {
+                strokeWidth: 2,
+                stroke: '#3b82f6',
+            }, type: 'bezier'
+        },
+        {
             id: '4-5', source: '4', target: '5', label: '', style: {
                 strokeWidth: 2,
                 stroke: '#3b82f6',
@@ -122,12 +150,7 @@ function SectionDetails() {
                 stroke: '#3b82f6',
             }, type: 'bezier'
         },
-        {
-            id: '5-7', source: '5', target: '7', label: '', style: {
-                strokeWidth: 2,
-                stroke: '#3b82f6',
-            }, type: 'bezier'
-        },
+
         {
             id: '6-7', source: '6', target: '7', label: '', style: {
                 strokeWidth: 2,
@@ -157,13 +180,7 @@ function SectionDetails() {
                 strokeWidth: 2,
                 stroke: '#3b82f6',
             }, label: 'Strategy Used', type: 'bezier'
-        },
-        {
-            id: '9-10', source: '9', target: '10', style: {
-                strokeWidth: 2,
-                stroke: '#3b82f6',
-            }, label: 'Strategy Used', type: 'bezier'
-        },
+        }
     ];
 
 
@@ -189,7 +206,7 @@ function SectionDetails() {
                 <div className='px-0 mb-12'>
                     <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >We <span className='px-5 py-3 mx-4 bg-blue-100 text-blue-400 w-fit rounded-2xl'>Provide</span></h1>
 
-                    <div className='grid grid-cols-3 flex-wrap gap-4 '>
+                    <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 flex-wrap gap-4 '>
                         <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Simple Learning Experience</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
@@ -248,7 +265,7 @@ function SectionDetails() {
                         <h1 className='py-4 px-7 bg-blue-100 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > Scalp Trading</h1>
                     </div>
 
-                    <div className='h-96 w-full my-12 p-2'>
+                    <div className='h-[50vh] w-full my-10 p-2'>
                         <ReactFlow
                             nodes={nodes}
                             onNodesChange={onNodesChange}
@@ -264,7 +281,7 @@ function SectionDetails() {
 
                 </div>
 
-                <div className='px-0 mt-12'>
+                <div className='px-0 '>
                     <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >And <span className='px-5 py-3 mx-4 bg-blue-100 text-blue-400 w-fit rounded-2xl'>Gain</span></h1>
                     <h1 className='text-2xl xs:text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl font-normal leading-8 text-slate-600 ' >The precise knowledge necessary to excel as a successful scalp trader in <span className=" text-blue-400 ">Options buying</span> within the equity derivatives segment.</h1>
 

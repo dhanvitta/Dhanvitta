@@ -6,34 +6,34 @@ function Section() {
     const learnPoints = [
         {
             title: 'Gain Confidence and Trade Successfully',
-            description: 'Access the latest market trends and insights.',
+            description: 'Learn the latest market trends and insights.',
             ref: useRef(null)
         },
         {
             title: 'Learn Faster and Smarter',
-            description: 'Get real-time suggestions for effective learning and faster progress.',
+            description: 'Effective learning and faster progress.',
             ref: useRef(null)
         },
         {
-            title: 'Save Time and Maximize ROI',
-            description: 'Stay updated on market trends and achieve better returns on investments.',
+            title: 'And Much More',
+            description: 'Achieve your trading goals and more.',
             ref: useRef(null)
         },
-        {
-            title: 'Connect and Succeed with Community',
-            description: 'Join a supportive community of traders and experts to achieve your trading goals.',
-            ref: useRef(null)
-        },
-        {
-            title: 'Achieve Trading Goals ',
-            description: 'Learn everything you need to succeed in the stock market and achieve your trading goals.',
-            ref: useRef(null)
-        },
-        {
-            title: 'And Much More ',
-            description: 'Achieve your trading goals.',
-            ref: useRef(null)
-        },
+        // {
+        //     title: 'Connect and Succeed with Community',
+        //     description: 'Join a supportive community of traders and experts to achieve your trading goals.',
+        //     ref: useRef(null)
+        // },
+        // {
+        //     title: 'Achieve Trading Goals ',
+        //     description: 'Learn everything you need to succeed in the stock market and achieve your trading goals.',
+        //     ref: useRef(null)
+        // },
+        // {
+        //     title: 'And Much More ',
+        //     description: 'Achieve your trading goals.',
+        //     ref: useRef(null)
+        // },
     ]
 
 
