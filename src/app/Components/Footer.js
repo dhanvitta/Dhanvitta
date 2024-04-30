@@ -23,7 +23,7 @@ function Footer() {
                     <div className='text-white flex flex-row sm:flex-col flex-wrap gap-3'>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>News</h6></Link>
                         <Link href='https://courses.dhanvitta.com/#/home'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
-                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Support</h6></Link>
+                        <Link href='mailto:support@dhanvitta.com'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Support</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Blog</h6></Link>
                     </div>
                 </div>
