@@ -11,7 +11,7 @@ function HeroSection() {
                 <div className='flex flex-col w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6 '>
                     <h1 className=' text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl  font-semibold ' >Master the Art of Stock Trading  </h1>
                     <h2 className='text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl  my-6'>with DhanVitta</h2>
-                    <p className=' break-words text-md xs:text-md sm:text-md md:text-lg lg:text-lg xl:text-lg font-normal  tracking-normal align-middle w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6'>Revolutionize Your Trading with RealTime AI Suggestions, Expert Analysis, and Interactive Learning Resources to Help You Trade with Confidence!</p>
+                    <p className=' break-words text-md xs:text-md sm:text-md md:text-lg lg:text-lg xl:text-lg font-normal  tracking-normal align-middle w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6'>Revolutionize Your Trading with Interactive Learning Resources and Expert Analysis to Help You Trade with Confidence!</p>
                     <div className='w-full xs:w-full sm:w-full m:w-1/2 lg:w-1/2 xl:w-1/2'>
                         <Link href="https://courses.dhanvitta.com">  <button className='mt-8 px-6  w-full h-14 rounded-3xl bg-slate-900 hover:text-yellow-300 text-md text-white '>Start Learning</button> </Link>
                     </div>

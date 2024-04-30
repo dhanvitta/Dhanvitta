@@ -12,7 +12,7 @@ function Footer() {
                             <div className='flex items-center flex-col w-28 rounded text-md font-medium py-2 text-white relative'> <FiTrendingUp className='text-xl mr-2 text-white' /> Dhanvitta <span className='text-[9px] absolute right-2 top-5'>TM</span></div>
                         </div>
                     </Link>
-                    <p className='text-gray-300 text-xs font-normal mt-1'>Copyright © 2023</p>
+                    <p className='text-gray-300 text-xs font-normal mt-1'>Copyright © 2024</p>
 
                 </div>
 
@@ -22,7 +22,7 @@ function Footer() {
                     <h1 className='text-md font-semibold text-white mb-4'>Resources</h1>
                     <div className='text-white flex flex-row sm:flex-col flex-wrap gap-3'>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>News</h6></Link>
-                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
+                        <Link href='https://courses.dhanvitta.com/#/home'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Support</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Blog</h6></Link>
                     </div>
