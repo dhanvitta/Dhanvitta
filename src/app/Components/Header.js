@@ -19,7 +19,7 @@ function Header() {
                         <Link href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>All Courses</p></Link>
                         {/* <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link> */}
                         {/* <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link> */}
-                        <Link href='/contact'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
+                        <Link href='mailto:info@dhanvitta.com'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
 
                     </div>
                     <div className='w-1/2 flex items-center justify-end '>
@@ -46,7 +46,7 @@ function Header() {
                                 {/* <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link> */}
                                 {/* <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>Blogs</p></Link> */}
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>About Us</p></Link>
-                                <Link className='w-full' href='/contact'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>
+                                <Link className='w-full' href='mailto:info@dhanvitta.com'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>
 
                                 <div className='w-full flex items-center justify-start py-6'>
                                     <Link className="flex flex-1" href='https://courses.dhanvitta.com'>  <button className='w-full h-16 rounded-lg bg-slate-900 text-sm text-white '>Start Learning</button></Link>
