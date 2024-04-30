@@ -6,11 +6,11 @@ function Section() {
     const learnPoints = [
         {
             title: 'Gain Confidence and Trade Successfully',
-            description: 'Access the latest market trends and insights for informed trading decisions.',
+            description: 'Access the latest market trends and insights.',
             ref: useRef(null)
         },
         {
-            title: 'Learn Faster and Smarter with AI-Powered',
+            title: 'Learn Faster and Smarter',
             description: 'Get real-time suggestions for effective learning and faster progress.',
             ref: useRef(null)
         },
@@ -26,12 +26,12 @@ function Section() {
         },
         {
             title: 'Achieve Trading Goals ',
-            description: 'Get everything you need to succeed in the stock market and achieve your trading goals.',
+            description: 'Learn everything you need to succeed in the stock market and achieve your trading goals.',
             ref: useRef(null)
         },
         {
             title: 'And Much More ',
-            description: 'Get everything you need to succeed in the stock market and achieve your trading goals.',
+            description: 'Achieve your trading goals.',
             ref: useRef(null)
         },
     ]
