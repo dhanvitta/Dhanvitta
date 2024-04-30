@@ -214,7 +214,7 @@ function SectionDetails() {
                         <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Exclusive Benefits</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
-                                Unlock special discounts and perks for future programs and features. From live webinars to advanced trading tools, we've got you covered.
+                                Unlock special discounts and perks for future programs and features. From live webinars to advanced trading tools, we&apos;ve got you covered.
                             </h3>
                         </div>
 
@@ -227,7 +227,7 @@ function SectionDetails() {
                         <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Unlimited Access</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
-                                Enjoy unrestricted access to course materials. Whether you're a quick learner or need more time to review, you can proceed at your own pace.
+                                Enjoy unrestricted access to course materials. Whether you&apos;re a quick learner or need more time to review, you can proceed at your own pace.
                             </h3>
                         </div>
 
