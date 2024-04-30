@@ -33,7 +33,7 @@ function Footer() {
                     <div className='text-white flex flex-row sm:flex-col gap-3'>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>About</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Careers</h6></Link>
-                        <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Privacy Policy</h6></Link>
+                        <Link href='https://drive.google.com/file/d/1AY8bYkMzsXMXrFR4TUS0_tMRsGGrqE2T/view?usp=sharing'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Privacy Policy</h6></Link>
                         <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Terms & Conditions</h6></Link>
                     </div>
                 </div>
