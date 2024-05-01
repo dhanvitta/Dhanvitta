@@ -4,6 +4,7 @@ import ReactFlow, {
     Background,
     applyNodeChanges,
     applyEdgeChanges,
+    MarkerType
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
@@ -49,6 +50,11 @@ function SectionDetails() {
             data: { label: 'Stock Market' },
             position: { x: 200, y: 0 },
             type: 'input',
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '2',
@@ -64,45 +70,75 @@ function SectionDetails() {
             id: '4',
             data: { label: 'Equity Derivative Market' },
             position: { x: 400, y: 100 },
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '5',
             data: { label: 'Futures' },
+            type: 'output',
             position: { x: 300, y: 250 },
         },
         {
             id: '6',
             data: { label: 'Options' },
             position: { x: 500, y: 250 },
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '7',
             data: { label: 'Put Option | Call Option' },
             position: { x: 500, y: 350 },
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '8',
             data: { label: 'Buying' },
             position: { x: 300, y: 500 },
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '9',
+            type: 'output',
             data: { label: 'Selling' },
             position: { x: 500, y: 500 },
         },
         {
             id: '10',
+            type: 'output',
             data: { label: 'Scalp Trading' },
             position: { x: 400, y: 600 },
+            style: {
+                background: '#eff6ff',
+                border: '2px solid #3b82f6',
+                color: '#3b82f6'
+            }
         },
         {
             id: '11',
             data: { label: 'Buying' },
+            type: 'output',
             position: { x: 100, y: 400 },
         },
         {
             id: '12',
             data: { label: 'Selling' },
+            type: 'output',
             position: { x: 280, y: 400 },
         },
     ];
@@ -111,75 +147,110 @@ function SectionDetails() {
         {
             id: '1-2', source: '1', target: '2', label: '', style: {
                 strokeWidth: 2,
-                stroke: '#3b82f6',
+                stroke: '#60a5fa',
             }, type: 'bezier'
         },
         {
-            id: '1-4', source: '1', target: '4', label: '', style: {
-                strokeWidth: 2,
+            id: '1-4', source: '1', target: '4', label: '', animated: true, style: {
+                strokeWidth: 3,
                 stroke: '#3b82f6',
-            }, type: 'bezier'
+            }, type: 'bezier',
+            markerEnd: {
+                type: MarkerType.ArrowClosed,
+                width: 10,
+                height: 10,
+                color: '#3b82f6',
+            }
         },
         {
             id: '2-3', source: '2', target: '3', label: '', style: {
                 strokeWidth: 2,
-                stroke: '#3b82f6',
+                stroke: '#60a5fa',
             }, type: 'bezier'
         },
         {
             id: '3-11', source: '3', target: '11', label: '', style: {
                 strokeWidth: 2,
-                stroke: '#3b82f6',
+                stroke: '#60a5fa',
             }, type: 'bezier'
         },
         {
             id: '3-12', source: '3', target: '12', label: '', style: {
                 strokeWidth: 2,
-                stroke: '#3b82f6',
+                stroke: '#60a5fa',
             }, type: 'bezier'
         },
         {
             id: '4-5', source: '4', target: '5', label: '', style: {
                 strokeWidth: 2,
-                stroke: '#3b82f6',
+                stroke: '#60a5fa',
             }, type: 'bezier'
         },
         {
-            id: '4-6', source: '4', target: '6', label: '', style: {
-                strokeWidth: 2,
+            id: '4-6', source: '4', target: '6', label: '', animated: true, style: {
+                strokeWidth: 3,
                 stroke: '#3b82f6',
-            }, type: 'bezier'
-        },
+            }, type: 'bezier',
+            markerEnd: {
+                type: MarkerType.ArrowClosed,
+                width: 10,
+                height: 10,
+                color: '#3b82f6',
+            }
 
+        },
         {
-            id: '6-7', source: '6', target: '7', label: '', style: {
-                strokeWidth: 2,
+            id: '6-7', source: '6', target: '7', label: '', animated: true, style: {
+                strokeWidth: 3,
                 stroke: '#3b82f6',
+            }, type: 'bezier',
+            markerEnd: {
+                type: MarkerType.ArrowClosed,
+                width: 10,
+                height: 10,
+                color: '#3b82f6',
+            }
+        },
+        {
+            id: '7-8', source: '7', target: '8', label: '',
+            animated: true, style: {
+                strokeWidth: 3,
+                stroke: '#3b82f6',
+            },
+            type: 'bezier',
+            markerEnd: {
+                type: MarkerType.ArrowClosed,
+                width: 10,
+                height: 10,
+                color: '#3b82f6',
+            }
+        },
+        {
+            id: '7-9', source: '7', target: '9', label: '',
+
+            style: {
+                strokeWidth: 2,
+                stroke: '#60a5fa',
+                background: 'red'
             }, type: 'bezier'
         },
         {
-            id: '7-8', source: '7', target: '8', label: '', style: {
-                strokeWidth: 2,
+            id: '8-10', source: '8', target: '10', animated: true, style: {
+                strokeWidth: 3,
                 stroke: '#3b82f6',
-            }, type: 'bezier'
-        },
-        {
-            id: '7-9', source: '7', target: '9', label: '', style: {
-                strokeWidth: 2,
-                stroke: '#3b82f6',
-            }, type: 'bezier'
-        },
-        {
-            id: '8-10', source: '8', target: '10', style: {
-                strokeWidth: 2,
-                stroke: '#3b82f6',
-            }, label: 'Strategy Used', type: 'bezier'
-        },
-        {
-            id: '8-10', source: '8', target: '10', style: {
-                strokeWidth: 2,
-                stroke: '#3b82f6',
-            }, label: 'Strategy Used', type: 'bezier'
+                backgroundColor: 'yellow'
+            },
+            label: 'Strategy Used',
+            labelBgPadding: [8, 4],
+            labelBgBorderRadius: 4,
+            labelBgStyle: { fill: '#fcd34d', color: '#fff', fillOpacity: 0.7 },
+            type: 'bezier',
+            markerEnd: {
+                type: MarkerType.ArrowClosed,
+                width: 10,
+                height: 10,
+                color: '#3b82f6',
+            }
         }
     ];
 
@@ -271,8 +342,10 @@ function SectionDetails() {
                             onNodesChange={onNodesChange}
                             edges={edges}
                             onEdgesChange={onEdgesChange}
+                            snapToGrid={true}
                             fitView
                             minZoom={0.6}
+
                         >
                             <Background />
                             <Controls />
