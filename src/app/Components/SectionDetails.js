@@ -269,50 +269,50 @@ function SectionDetails() {
 
 
     return (
-        <div className='w-11/12 mx-auto my-28 py-8 flex flex-col bg-blue-50 rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8'>
+        <div className='w-11/12 mx-auto my-28 py-8 flex flex-col bg-slate-50 rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]'>
 
 
             <div className=' rounded-2xl px-6 py-12 flex flex-col items-start justify-start '>
 
                 <div className='px-0 mb-12'>
-                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >We <span className='px-5 py-3 mx-4 bg-blue-100 text-blue-400 w-fit rounded-2xl'>Provide</span></h1>
+                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >We <span className='px-5 py-3 mx-4 bg-blue-100/40 text-blue-400 w-fit rounded-2xl'>Provide</span></h1>
 
                     <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 flex-wrap gap-4 '>
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Simple Learning Experience</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Our course material, designed to be straightforward and easy to grasp.
                             </h3>
                         </div>
 
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl inset-0 '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Clear and Concise Content</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Say goodbye to confusion with our streamlined approach. We focus on what matters most, avoiding complex jargon and unnecessary details.
                             </h3>
                         </div>
 
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Faster Mastery</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Get ready to become proficient in less time. Our course is structured for efficient learning, so you can start applying your new skills sooner.
                             </h3>
                         </div>
 
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Exclusive Benefits</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Unlock special discounts and perks for future programs and features. From live webinars to advanced trading tools, we&apos;ve got you covered.
                             </h3>
                         </div>
 
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Certification</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Receive a prestigious certificate from Dhanvitta upon completing the course, showcasing your expertise in options trading.
                             </h3>
                         </div>
-                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100 rounded-2xl '>
+                        <div className='p-8 flex flex-col items-start justify-start bg-blue-100/40 rounded-2xl '>
                             <h1 className='  text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold leading-normal text-gray-700  flex flex-col ' > Unlimited Access</h1>
                             <h3 className='mt-2  text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-gray-600 flex flex-col '>
                                 Enjoy unrestricted access to course materials. Whether you&apos;re a quick learner or need more time to review, you can proceed at your own pace.
@@ -326,14 +326,14 @@ function SectionDetails() {
                 </div>
 
                 <div className='px-0 my-12'>
-                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >You will <span className='px-5 py-3 mx-4 bg-blue-100 text-blue-400 w-fit rounded-2xl'>Learn</span></h1>
+                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >You will <span className='px-5 py-3 mx-4 bg-blue-100/40 text-blue-400 w-fit rounded-2xl'>Learn</span></h1>
 
                     <div className='flex flex-wrap gap-4'>
-                        <h1 className='py-4 px-7 bg-blue-100 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > How to make trading setup</h1>
-                        <h1 className='py-4 px-7 bg-blue-100 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' >  Extra effective trading strategies</h1>
-                        <h1 className='py-4 px-7 bg-blue-100 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > Risk management</h1>
+                        <h1 className='py-4 px-7 bg-blue-100/50 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > How to make trading setup</h1>
+                        <h1 className='py-4 px-7 bg-blue-100/40 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' >  Extra effective trading strategies</h1>
+                        <h1 className='py-4 px-7 bg-blue-100/40 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > Risk management</h1>
 
-                        <h1 className='py-4 px-7 bg-blue-100 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > Scalp Trading</h1>
+                        <h1 className='py-4 px-7 bg-blue-100/40 rounded-2xl text-md xs:text-md sm:text-md md:text-md lg:text-md xl:text-md font-normal leading-normal text-blue-400  flex flex-col text-center ' > Scalp Trading</h1>
                     </div>
 
                     <div className='h-[50vh] w-full my-10 p-2'>
@@ -355,7 +355,7 @@ function SectionDetails() {
                 </div>
 
                 <div className='px-0 '>
-                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >And <span className='px-5 py-3 mx-4 bg-blue-100 text-blue-400 w-fit rounded-2xl'>Gain</span></h1>
+                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-4xl  font-medium leading-normal text-slate-600 mb-8 flex flex-row items-center  ' >And <span className='px-5 py-3 mx-4 bg-blue-100/50 text-blue-400 w-fit rounded-2xl'>Gain</span></h1>
                     <h1 className='text-2xl xs:text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl font-normal leading-8 text-slate-600 ' >The precise knowledge necessary to excel as a successful scalp trader in <span className=" text-blue-400 ">Options buying</span> within the equity derivatives segment.</h1>
 
 
