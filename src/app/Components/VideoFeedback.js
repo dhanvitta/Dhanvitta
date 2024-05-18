@@ -5,7 +5,7 @@ function VideoFeedback() {
     return (
         <div className='w-11/12 my-12 p-8 xs:p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 py-18 mx-auto border border-slate-100 bg-slate-50 rounded-3xl inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'>
 
-            <div className='grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
                 <div className=''>
                     <div className=''>
                         <h1 className='text-4xl text-slate-700 font-medium'>What is <span className='bg-yellow-300/50 rounded-xl px-3 py-1'>Dhanvitta</span>  ? </h1>
