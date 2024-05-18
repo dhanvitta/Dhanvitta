@@ -8,7 +8,7 @@ function VideoFeedback() {
             <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
                 <div className='w-full'>
                     <div className=''>
-                        <h1 className='text-4xl text-slate-700 font-medium'>What is <span className='text-yellow-300 rounded-xl px-3 py-1'>Dhanvitta</span>  ? </h1>
+                        <h1 className='text-4xl text-slate-700 font-medium'>What is <span className='text-yellow-300 rounded-xl '>Dhanvitta</span>  ? </h1>
                         <h1 className='text-xl text-slate-700 font-normal my-5'>Hear from our expert. </h1>
                     </div>
 
