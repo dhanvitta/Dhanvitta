@@ -14,7 +14,7 @@ export default function Home() {
     <React.Fragment>
       <Header />
       <HeroSection />
-      <VideoFeedback />
+      {/* <VideoFeedback /> */}
       <SectionDetails />
       <Section />
       {/* <Advantanges /> */}
