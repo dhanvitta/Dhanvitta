@@ -6,11 +6,11 @@ function HeroSection() {
 
     return (
         <React.Fragment>
-            <div className='w-11/12 mx-auto  bg-yellow-300 rounded-3xl p-8 xs:p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 my-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
+            <div className='w-11/12 mx-auto rounded-3xl p-8 xs:p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 my-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 bg-yellow-200 inset-0 bg-[radial-gradient(#fde047_2px,transparent_2px)] [background-size:16px_16px]'>
 
                 <div className='flex flex-col w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6 '>
                     <h1 className=' text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl  font-semibold ' >Master the Art of Stock Trading  </h1>
-                    <h2 className='text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl  my-6'>with DhanVitta</h2>
+                    <h2 className='text-2xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl  my-6'>with Dhanvitta</h2>
                     <p className=' break-words text-md xs:text-md sm:text-md md:text-lg lg:text-lg xl:text-lg font-normal  tracking-normal align-middle w-full xs:w-full sm:w-full md:w-5/6 lg:w-5/6 xl:w-5/6'>Revolutionize Your Trading with Interactive Learning Resources and Expert Analysis to Help You Trade with Confidence!</p>
                     <div className='w-full xs:w-full sm:w-full m:w-1/2 lg:w-1/2 xl:w-1/2'>
                         <Link href="https://courses.dhanvitta.com">  <button className='mt-8 px-6  w-full h-14 rounded-3xl bg-slate-900 hover:text-yellow-300 text-md text-white '>Start Learning</button> </Link>
