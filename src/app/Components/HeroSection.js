@@ -18,7 +18,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className=' hidden xs:hidden sm:hidden md:hidden  lg:grid xl:grid grid-cols-2 grid-col-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
+                <div className=' grid xs:grid sm:grid md:grid  lg:grid xl:grid grid-cols-2 grid-col-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
                     {/*  */}
                     {/* <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
                         <FiTrendingUp className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
@@ -33,7 +33,7 @@ function HeroSection() {
                     </div> */}
 
 
-                    <div className='relative h-72 w-full mt-0 sm:mt-0 md:mt-0 lg:mt-8 xl:mt-0 flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
+                    <div className='relative h-72 w-full mt-8 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-0 flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
                         <div className='flex flex-col  gap-8 animate-infinite-scroll-y  '>
                             {
                                 keywords?.map((features, id) => (
