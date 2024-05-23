@@ -18,7 +18,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className=' grid xs:grid sm:grid md:grid  lg:grid xl:grid grid-cols-2 grid-col-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
+                <div className=' hidden xs:hidden sm:hidden md:grid  lg:grid xl:grid grid-cols-2 grid-col-auto gap-6 items-center justify-items-stretch justify-content-stretch'>
                     {/*  */}
                     {/* <div className=' bg-slate-900 h-1/2 p-8 rounded-3xl flex items-center justify-center -rotate-6 group cursor-pointer'>
                         <FiTrendingUp className='text-white text-8xl group-hover:text-yellow-300 group-hover:-mt-8' />
