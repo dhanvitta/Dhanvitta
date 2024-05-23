@@ -27,7 +27,7 @@ function CoursesSection() {
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 h-96 '>
-                    <div className='mt-0 sm:mt-0 md:mt-0 lg:mt-8 xl:mt-0 h-auto w-full flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
+                    <div className='mt-8 sm:mt-8 md:mt-8 lg:mt-8 xl:mt-0 h-auto w-full flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
                         <div className=' flex flex-col  gap-8 animate-infinite-scroll-y'>
                             {
                                 MentorshipFeatures?.map((features, id) => (
@@ -46,7 +46,7 @@ function CoursesSection() {
                     </div>
 
                     {/*  */}
-                    <div className='h-auto w-full hidden sm:hidden md:hidden lg:flex xl:flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
+                    <div className='mt-8 sm:mt-8 md:mt-0 lg:mt-8 xl:mt-0 h-auto w-full hidden sm:hidden md:hidden lg:flex xl:flex flex-col flex-nowrap [mask-image:_linear-gradient(to_bottom,transparent_0,_black_160px,_black_calc(100%-160px),transparent_100%)] overflow-hidden'>
                         <div className=' flex flex-col  gap-8 animate-reverse-infinite-scroll-y'>
 
                             {

@@ -19,7 +19,7 @@ function Reviews() {
                     </div>
 
                     <div className='w-full flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_110px,_black_calc(100%-120px),transparent_100%)] overflow-hidden'>
-                        <div className=' flex flex-row  gap-8 animate-infinite-scroll'>
+                        <div className=' flex flex-row  gap-8 animate-infinite-scroll snap-x'>
                             {
                                 reviewsData?.users?.map((user, id) => (
                                     <ReviewCard key={id} data={user} />
@@ -28,7 +28,7 @@ function Reviews() {
 
                         </div >
 
-                        <div className=' flex flex-row gap-8 ml-8 animate-infinite-scroll ' aria-hidden="true">
+                        <div className=' flex flex-row gap-8 ml-8 animate-infinite-scroll snap-x ' aria-hidden="true">
                             {
                                 reviewsData?.users?.map((user, id) => (
                                     <ReviewCard key={id} data={user} />

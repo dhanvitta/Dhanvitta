@@ -14,7 +14,7 @@ function ReviewCard({ data = {} }) {
 
 
     return (
-        <div className=' h-fit w-80 md:even:mt-6 lg:even:mt-6 xl:even:mt-6 p-6 rounded-2xl border bg-white/40 shadow-sm '>
+        <div className=' h-fit w-80 md:even:mt-6 lg:even:mt-6 xl:even:mt-6 p-6 rounded-2xl border bg-white/40 shadow-sm snap-center '>
             <div className='flex flex-row items-center justify-start'>
                 <Image src={'account.svg'} height={24} width={24} alt="User Image" className='rounded-full h-7 w-7 border border-gray-800 p-1' />
                 <h1 className='ml-4 text-sm text-gray-800 font-medium'>{data?.name}</h1>
