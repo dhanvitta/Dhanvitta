@@ -25,6 +25,7 @@
     "react-financial-charts": "^2.0.1",
     "react-flow-renderer": "^10.3.17",
     "react-icons": "^4.11.0",
+    "react-stars": "^2.2.5",
     "reactflow": "^11.11.2",
     "recharts": "^2.10.1",
     "swr": "^2.2.4",
