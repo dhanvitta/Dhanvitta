@@ -72,7 +72,7 @@ const MentorshipFeatures = [
 
 
 const keywords = ['Stocks', 'Equity Derivative Market', 'Futures', 'Shares', 'Options', 'Open Interest Data', 'Risk Management', 'Scalp Trading',]
-const financialTerms = ['Cash Flow', 'Assets', 'Capital Market', 'Compound Interest', 'SIP', 'Liquidity', 'Crypto', 'Mutual Funds',]
+const financialTerms = ['Cash Flow', 'Assets', 'Capital Market', 'Compound Interest', 'SIP', 'Liquidity', 'Mutual Funds',]
 
 
 
