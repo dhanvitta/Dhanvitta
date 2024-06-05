@@ -25,7 +25,7 @@ function Header() {
                     </div>
                     <div className='w-1/2 flex items-center justify-end gap-8 '>
                         <div className='flex flex-row gap-4 border p-3 rounded-md'>
-                            <Link className='w-full' href='https://wa.me/message/WRPYRSVIFTTPD1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
+                            <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
                             <Link className='w-full' href='https://www.instagram.com/dhanvitta/'><FaInstagram className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-pink-500' /></Link>
                             <Link className='w-full' href='https://t.me/dhanvitta'> <FaTelegramPlane className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-sky-500' /></Link>
                         </div>
@@ -56,7 +56,7 @@ function Header() {
 
                                 <div className='w-full flex items-center flex-col justify-start py-6 gap-6 '>
                                     <div className='w-full flex flex-row items-center justify-center gap-4 border p-3 rounded-md'>
-                                        <Link className='w-full' href='https://wa.me/message/WRPYRSVIFTTPD1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
+                                        <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
                                         <Link className='w-full' href='https://www.instagram.com/dhanvitta/'><FaInstagram className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-pink-500' /></Link>
                                         <Link className='w-full' href='https://t.me/dhanvitta'> <FaTelegramPlane className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-sky-500' /></Link>
                                     </div>

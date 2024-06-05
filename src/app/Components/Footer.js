@@ -35,7 +35,7 @@ function Footer() {
                         <Link href='https://drive.google.com/file/d/1hXIX82oKcJv-HffotzEag1qTnFBS3W7o/view'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Refund Policy</h6></Link>
 
                         <Link href='https://drive.google.com/file/d/1AY8bYkMzsXMXrFR4TUS0_tMRsGGrqE2T/view?usp=sharing'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Privacy Policy</h6></Link>
-                        <Link href='https://drive.google.com/file/d/1c7Cak7IqVZIx5ywMz3RHPjkMgCFZlRxE/view?usp=sharing'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Terms & Conditions</h6></Link>
+                        <Link href='https://drive.google.com/file/d/1c7FVQqSv7ceAwUWvz6zjw3zlVZVlHdq0/view?usp=sharing '><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300 '>Terms & Conditions</h6></Link>
                     </div>
                 </div>
                 <div className='my-4 sm:my-4 md:my-0 lg:my-0 xl:my-0'>
