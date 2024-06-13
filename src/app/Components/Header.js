@@ -20,7 +20,7 @@ function Header() {
                         <Link href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>All Courses</p></Link>
                         {/* <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link> */}
                         {/* <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link> */}
-                        {/* <Link href='mailto:info@dhanvitta.com'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link> */}
+                        <Link href='https://courses.dhanvitta.com/#/contact'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
 
                     </div>
                     <div className='w-1/2 flex items-center justify-end gap-8 '>
@@ -52,7 +52,7 @@ function Header() {
                                 {/* <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link> */}
                                 {/* <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>Blogs</p></Link> */}
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>About Us</p></Link>
-                                {/* <Link className='w-full' href='mailto:info@dhanvitta.com'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link> */}
+                                <Link className='w-full' href='https://courses.dhanvitta.com/#/contact'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>
 
                                 <div className='w-full flex items-center flex-col justify-start py-6 gap-6 '>
                                     <div className='w-full flex flex-row items-center justify-center gap-4 border p-3 rounded-md'>

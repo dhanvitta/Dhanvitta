@@ -25,7 +25,7 @@ export default function Home() {
       {/* <Advantanges /> */}
       {/* <LearnSection /> */}
       <Footer />
-      <Social />
+      {/* <Social /> */}
     </React.Fragment>
   )
 }
