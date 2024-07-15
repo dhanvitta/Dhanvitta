@@ -45,7 +45,6 @@ const StockChartRecharts = ({ data }) => {
 };
 
 const OpenInterestChart = ({ data }) => {
-
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
             return (

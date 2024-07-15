@@ -16,7 +16,7 @@ function Header() {
                     <div className='w-1/4 '><Link className='w-full' href='/'><div className='flex items-center flex-col w-28 rounded text-md font-medium p-2 text-gray-800 '> <FiTrendingUp className='text-xl mr-2 ' /> Dhanvitta</div></Link></div>
                     <div className='flex flex-row items-center font-normal justify-center mt-4 xs:mt-6 sm:mt-0 md:mt-0 lg:mt-0 text-md text-gray-900 w-full '>
                         <Link href='/'><p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Home</p></Link>
-                        <Link href='/oi-data'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>OI Data</p></Link>
+                        <Link href='/oi-data'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Signals</p></Link>
                         <Link href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>All Courses</p></Link>
                         {/* <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link> */}
                         {/* <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link> */}
@@ -25,7 +25,7 @@ function Header() {
                     </div>
                     <div className='w-1/2 flex items-center justify-end gap-8 '>
                         <div className='flex flex-row gap-4 border p-3 rounded-md'>
-                            <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
+                            {/* <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link> */}
                             <Link className='w-full' href='https://www.instagram.com/dhanvitta/'><FaInstagram className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-pink-500' /></Link>
                             <Link className='w-full' href='https://t.me/dhanvitta'> <FaTelegramPlane className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-sky-500' /></Link>
                         </div>
@@ -46,7 +46,7 @@ function Header() {
                         <React.Fragment >
                             <div className='flex flex-col items-start justify-start text-sm text-slate-900 w-full  py-6 h-screen'>
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>Home</p></Link>
-                                <Link className='w-full' href='/oi-data'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>OI Data</p></Link>
+                                <Link className='w-full' href='/oi-data'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>Signals</p></Link>
                                 <Link className='w-full' href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>All Courses</p></Link>
 
                                 {/* <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link> */}
@@ -56,7 +56,7 @@ function Header() {
 
                                 <div className='w-full flex items-center flex-col justify-start py-6 gap-6 '>
                                     <div className='w-full flex flex-row items-center justify-center gap-4 border p-3 rounded-md'>
-                                        <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link>
+                                        {/* <Link className='w-full' href='https://wa.me/message/W6RF5NYTD3GWH1'><FaWhatsapp className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-green-600' /></Link> */}
                                         <Link className='w-full' href='https://www.instagram.com/dhanvitta/'><FaInstagram className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-pink-500' /></Link>
                                         <Link className='w-full' href='https://t.me/dhanvitta'> <FaTelegramPlane className='text-xl mr-2 text-gray-800 cursor-pointer hover:text-sky-500' /></Link>
                                     </div>
