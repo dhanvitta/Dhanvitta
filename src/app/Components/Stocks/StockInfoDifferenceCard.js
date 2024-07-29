@@ -37,7 +37,8 @@ function StockInfodifferenceCard({ data }) {
 
     return (
         <div className='-border-t bg-white p-5 border-t border-dashed flex flex-col'>
-            <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 mt-0 gap-6'>
+            <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 mt-0 gap-6'>
+
                 <MiniCards keyName={'Total Call OI'} value={ce.toLocaleString('en-IN')} />
                 <MiniCards keyName={'Total Put OI'} value={pe.toLocaleString('en-IN')} />
                 <MiniCards keyName={'Difference OI'} value={doi.toLocaleString('en-IN')} />

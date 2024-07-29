@@ -4,8 +4,8 @@ function MiniCards({ keyName, value }) {
     keyName == 'symbol_name' ? keyName = "Symbol" : null
     keyName == 'prev_price' ? keyName = "Previous price" : null
     keyName == 'last_trade_price' ? keyName = "Last trade price" : null
-    keyName == 'change_value' ? keyName = "Change value" : null
-    keyName == 'change_per' ? keyName = "Change per" : null
+    // keyName == 'change_value' ? keyName = "Change value" : null
+    // keyName == 'change_per' ? keyName = "Change per" : null
     keyName === 'created_at' && (keyName = 'Created At', value = value.split('T')[0]);
 
     return (

@@ -7,8 +7,9 @@ import { FiAlignRight, FiTrendingUp, FiCheck } from "react-icons/fi";
 
 
 
-function StockInfoCard({ data, index, setIndex }) {
+function StockInfoCard({ data, index, setIndex, symbol }) {
 
+    console.log(data?.resultData)
     const [isAgree, setIsAgree] = useState(false);
 
     const options = [
@@ -58,9 +59,9 @@ function StockInfoCard({ data, index, setIndex }) {
             </div>
 
             {
-                data && (
-                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-10 mt-6 gap-6'>
-                        {Object.entries(data?.resultData?.[index] || {}).map(([key, value]) => (
+                data?.resultData && (
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 mt-6 gap-6'>
+                        {Object.entries(data?.resultData?.[symbol] || {}).slice(0, 7).map(([key, value]) => (
                             <MiniCards key={key} keyName={key} value={value} />
                         ))}
 
