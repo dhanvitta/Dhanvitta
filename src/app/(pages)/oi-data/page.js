@@ -1,21 +1,81 @@
 "use client"
+import React, { useState, useEffect } from 'react';
+import useSWR from 'swr';
+import { fetcher } from "@/app/utils/utils";
+import { StockChartRecharts, OpenInterestChart } from '@/app/Components/Stocks/StockChart';
+import Header from '@/app/Components/Header';
+import StockInfoCard from '@/app/Components/Stocks/StockInfoCard';
+import StockInfodifferenceCard from '@/app/Components/Stocks/StockInfoDifferenceCard';
 
-import Header from "@/app/Components/Header"
-import Link from 'next/link'
+export default function OpenInterestPage() {
 
-export default function OiData() {
+    const bankNiftyURL = '/api/openInterest';
+    const indexDataURL = '/api/IndexStocksData';
+    const [index, setIndex] = useState('niftyoichange');
+
+
+    useEffect(() => {
+        localStorage.setItem('index', index);
+        if (index) {
+            mutateData1();
+            mutateData2();
+        }
+    }, [index]);
+
+
+    const fetcherWithPost = (url) => fetcher(url, 'POST', { body: { symbol: index } });
+
+    const { data: data1, error: error1, isValidating: isValidating1, mutate: mutateData1 } = useSWR(
+        bankNiftyURL, fetcherWithPost,
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+        }
+    );
+
+    const { data: data2, error: error2, isValidating: isValidating2, mutate: mutateData2 } = useSWR(
+        indexDataURL, fetcher,
+        {
+            revalidateOnFocus: false,
+            revalidateOnReconnect: false,
+        }
+    );
+
+    if (error1 || error2) return (
+        <div className="h-screen w-full flex items-center justify-center text-2xl flex-col">
+            Failed to load data
+            <button
+                className='border rounded-md bg-gray-900 text-white text-sm px-5 py-2 mt-4'
+                onClick={() => { mutateData1(); mutateData2(); }}>
+                Retry
+            </button>
+        </div>
+    );
+
+    if (isValidating1 || isValidating2) return (
+        <div className="h-screen w-full flex items-center justify-center text-2xl animate-pulse flex-col">
+            Fetching Open Interest Data ...
+            <span className="rounded-md bg-gray-900 text-white mt-5 animate-spin h-6 w-6"></span>
+        </div>
+    );
+
+
     return (
-        <>
+        <React.Fragment>
+
             <Header />
-            <div className="bg-white text-sm  w-full flex flex-row items-center">
-                <div className="text-slate-600 w-full flex flex-row items-center justify-center"> <span className="font-semibold mx-2">Note:</span>Please Read the disclaimer prior to utilizing the OI tool for investment decision-making. |
-                    <Link href='https://drive.google.com/file/d/1pJty6dMBIt1jKRf4OkCkT28MkdYvxb2a/view?usp=sharing' target="_blank"><p className='text-blue-500  mx-2 cursor-pointer'>View Disclaimer</p></Link>
+            <div className='w-full bg-slate-100'>
+                <div className='mx-auto w-11/12 h-screen '>
 
+                    <StockInfoCard data={data2} index={index} setIndex={setIndex} />
+                    <StockInfodifferenceCard data={data1} />
+                    <div className='flex flex-row flex-wrap mt-5'>
+                        <StockChartRecharts data={data1?.resultData?.data} />
+                        {/* <OpenInterestChart data={dataOI} /> */}
+                    </div>
+                    {/* <StockTable data={data1?.data} /> */}
                 </div>
-
             </div>
-            <iframe src="https://oi-data-dhanvitta.vercel.app/" frameBorder="0" width="100%" height="100%" allowFullScreen className="p-0 m-0 h-screen border-none"></iframe>
-
-        </>
-    )
+        </React.Fragment>
+    );
 }

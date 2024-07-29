@@ -6,7 +6,7 @@ import {
 const StockChartRecharts = ({ data }) => {
 
     return (
-        <div className='bg-white  p-5 w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2'>
+        <div className='bg-white rounded-md p-6 w-full xs:w-full sm:w-full md:w-full lg:w-full xl:w-full'>
 
             <ResponsiveContainer width="100%" height={480}>
                 <BarChart
@@ -20,7 +20,9 @@ const StockChartRecharts = ({ data }) => {
                     className="text-xs text-gray-900 rounded bg-white"
                 >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <Legend verticalAlign='top' />
+                    <Legend verticalAlign='bottom'
+                        height={10}
+                    />
                     <XAxis dataKey="strike_price" />
                     <YAxis />
                     <Tooltip useTranslate3d={true} />

@@ -11,7 +11,7 @@ function MiniCards({ keyName, value }) {
     return (
         <div className='flex flex-col '>
             <h1 className='text-xs font-normal text-slate-500 mb-1 capitalize'>{keyName}</h1>
-            <h1 className='text-sm font-medium text-slate-900'>{value}</h1>
+            <h1 className='text-md font-medium text-slate-700' style={{ color: value === "Bullish" ? '#10b981' : value === "Bearish" ? '#ef4444' : 'var(--font-color)' }}>{value}</h1>
         </div>
     )
 }
