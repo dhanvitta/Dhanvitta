@@ -7,8 +7,6 @@ import Link from 'next/link';
 
 function StockInfoCard({ data, index, setIndex }) {
 
-
-    console.warn(index)
     const options = [
         { value: 'niftyoichange', label: 'Nifty' },
         { value: 'bankniftyoichange', label: 'Bank Nifty' },
@@ -48,8 +46,9 @@ function StockInfoCard({ data, index, setIndex }) {
             {data && (
                 <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-10 mt-6 gap-6'>
                     {Object.entries(data?.resultData?.[index] || {}).map(([key, value]) => (
-                        <MiniCards keyName={key} value={value} />
+                        <MiniCards key={key} keyName={key} value={value} />
                     ))}
+
                 </div>
             )}
         </div>
