@@ -30,11 +30,11 @@ function StockInfoCard({ data, index, setIndex, symbol }) {
         <div className='-border-t bg-white p-5 border-t border-dashed flex flex-col'>
 
             {!isAgree ?
-                <div className="bg-blue-50 p-3 rounded-md text-slate-600 w-full flex flex-row flex-wrap items-center justify-between mb-6 text-sm border ">
+                <div className="bg-blue-50 p-3 rounded-md text-slate-600 w-full flex flex-row flex-wrap items-center justify-between mb-6 text-sm border gap-2">
 
-                    <div className="flex flex-row items-center justify-start flex-wrap">
+                    <div className="flex flex-row items-center justify-start flex-wrap gap-2">
                         Information: Please Read the disclaimer prior to utilizing the OI tool for investment decision-making.
-                        <Link href='https://drive.google.com/file/d/1pJty6dMBIt1jKRf4OkCkT28MkdYvxb2a/view?usp=sharing' target="_blank"> <p className='text-blue-500 cursor-pointer ml-2 '> View Disclaimer</p></Link>
+                        <Link href='https://drive.google.com/file/d/1pJty6dMBIt1jKRf4OkCkT28MkdYvxb2a/view?usp=sharing' target="_blank"> <p className='text-blue-500 cursor-pointer '> View Disclaimer</p></Link>
                     </div>
                     <div className="border border-blue-400 rounded-md text-blue-500 bg-blue-100 p-1 px-2 text-xs flex items-center justify-center cursor-pointer" onClick={() => setIsAgree(true)}><FiCheck className="text-blue-500 mr-2 rounded-full border border-blue-400 p-1 h-5 w-5 " /> Agree</div>
 
@@ -60,7 +60,7 @@ function StockInfoCard({ data, index, setIndex, symbol }) {
 
             {
                 data?.resultData && (
-                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 mt-6 gap-6'>
+                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 mt-6 gap-6'>
                         {Object.entries(data?.resultData?.[symbol] || {}).slice(0, 7).map(([key, value]) => (
                             <MiniCards key={key} keyName={key} value={value} />
                         ))}
