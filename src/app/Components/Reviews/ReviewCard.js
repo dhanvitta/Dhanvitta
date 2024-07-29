@@ -7,6 +7,10 @@ function ReviewCard({ data = {} }) {
 
     const { name, message, ratings } = data;
 
+    const ratingChanged = (newRating) => {
+        console.log(newRating)
+    }
+
 
 
     return (
