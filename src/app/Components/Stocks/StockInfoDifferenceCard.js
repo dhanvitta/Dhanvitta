@@ -42,7 +42,7 @@ function StockInfodifferenceCard({ data }) {
                 <MiniCards keyName={'Total Call OI'} value={ce.toLocaleString('en-IN')} />
                 <MiniCards keyName={'Total Put OI'} value={pe.toLocaleString('en-IN')} />
                 <MiniCards keyName={'Difference OI'} value={doi.toLocaleString('en-IN')} />
-                <MiniCards keyName={'Result'} value={signal.toLocaleString('en-IN')} />
+                <MiniCards keyName={'Signal'} value={signal.toLocaleString('en-IN')} />
             </div>
         </div>
     );
