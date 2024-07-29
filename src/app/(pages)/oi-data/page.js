@@ -14,9 +14,6 @@ export default function OpenInterestPage() {
     const [index, setIndex] = useState('niftyoichange');
     const [symbol, setSymbol] = useState('nifty50');
 
-    const [interval, setInterval] = useState(
-        () => localStorage.getItem('interval') || 1
-    );
 
     useEffect(() => {
 
@@ -84,7 +81,7 @@ export default function OpenInterestPage() {
             <div className='w-full bg-slate-100'>
                 <div className='mx-auto w-11/12 h-screen '>
 
-                    <StockInfoCard data={data2} index={index} setIndex={setIndex} symbol={symbol} mutate={{ mutateData1, mutateData2 }} interval={interval} setInterval={setInterval} />
+                    <StockInfoCard data={data2} index={index} setIndex={setIndex} symbol={symbol} mutate={{ mutateData1, mutateData2 }} />
                     <StockInfodifferenceCard data={data1} />
                     <div className='flex flex-row flex-wrap mt-5'>
                         <StockChartRecharts data={data1?.resultData?.data} />

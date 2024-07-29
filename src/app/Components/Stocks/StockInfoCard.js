@@ -8,7 +8,7 @@ import { IoRefreshSharp } from "react-icons/io5";
 
 
 
-function StockInfoCard({ data, index, setIndex, symbol, mutate, interval, setInterval }) {
+function StockInfoCard({ data, index, setIndex, symbol, mutate }) {
 
     console.log("mutate")
     const [isAgree, setIsAgree] = useState(false);
