@@ -4,12 +4,13 @@ import Select from 'react-select';
 import MiniCards from "./MiniCards";
 import Link from 'next/link';
 import { FiAlignRight, FiTrendingUp, FiCheck } from "react-icons/fi";
+import { IoRefreshSharp } from "react-icons/io5";
 
 
 
-function StockInfoCard({ data, index, setIndex, symbol }) {
+function StockInfoCard({ data, index, setIndex, symbol, mutate, interval, setInterval }) {
 
-    console.log(data?.resultData)
+    console.log("mutate")
     const [isAgree, setIsAgree] = useState(false);
 
     const options = [
@@ -18,7 +19,7 @@ function StockInfoCard({ data, index, setIndex, symbol }) {
     ];
 
     const colourStyles = {
-        control: (styles) => ({ ...styles, backgroundColor: 'white', padding: '0.2rem' }),
+        control: (styles) => ({ ...styles, backgroundColor: 'white', padding: '0.1rem' }),
     };
 
     const handleIndexChange = (selectedOption) => {
@@ -26,8 +27,12 @@ function StockInfoCard({ data, index, setIndex, symbol }) {
         setIndex(newIndex);
     };
 
+
+
+
+
     return (
-        <div className='-border-t bg-white p-5 border-t border-dashed flex flex-col'>
+        <div className='-border-t bg-white  border-t border-dashed flex flex-col p-4'>
 
             {!isAgree ?
                 <div className="bg-blue-50 p-3 rounded-md text-slate-600 w-full flex flex-row flex-wrap items-center justify-between mb-6 text-sm border gap-2">
@@ -43,24 +48,45 @@ function StockInfoCard({ data, index, setIndex, symbol }) {
             }
 
 
-            <div className='row-span-2 flex-col items-start justify-start w-full top-0 sticky'>
-                <div className='pb-0'>
-                    <h1 className='text-sm text-slate-600 mb-2'>Symbol</h1>
+            <div className='bg-white z-40 row-span-2 flex-col items-start justify-between  w-full top-0 sticky border-b border-dashed pb-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6'>
+                <div className=''>
+                    <h1 className='text-xs text-slate-600 mb-2'>Symbol</h1>
                     <Select
                         id="index-select"
                         options={options}
                         value={options.find(option => option.value === index)}
                         onChange={handleIndexChange}
-                        className="w-40"
+                        className="w-full sm:w-full md:w-44 lg:w-44 xl:w-44 text-sm z-50"
                         styles={colourStyles}
                     />
                 </div>
 
+
+
+                <div className=' col-start-1 sm:col-start-1 md:col-start-3 lg:col-start-4 xl:col-start-4  col-span-1 w-full bg-blue-100 hover:bg-blue-200 text-blue-500 border-2 rounded-lg border-blue-500 flex items-center justify-center self-end float-right flex-col py-4 cursor-pointer group' onClick={() => { mutate.mutateData1(); mutate.mutateData2() }}>
+                    <IoRefreshSharp className="h-6 w-6 group-hover:rotate-180 transition ease-in-out duration-300  " />
+                </div>
+
+                {/* <div className=' bg-blue-100 text-blue-500 border-2 rounded-lg border-blue-500 flex items-center justify-center flex-col py-4' onClick={() => { mutate.mutateData1(); mutate.mutateData2() }}>
+                    <input
+                        type="range"
+                        min="1"
+                        max="10"
+                        value={interval}
+                        onChange={(e) => {
+                            setInterval(Number(e.target.value));
+                            localStorage.setItem('interval', Number(e.target.value));
+
+                        }}
+                    />
+                </div> */}
+
             </div>
+
 
             {
                 data?.resultData && (
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 mt-6 gap-6'>
+                    <div className='bg-white z-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-7 gap-6 pt-4 top-0 sticky '>
                         {Object.entries(data?.resultData?.[symbol] || {}).slice(0, 7).map(([key, value]) => (
                             <MiniCards key={key} keyName={key} value={value} />
                         ))}
