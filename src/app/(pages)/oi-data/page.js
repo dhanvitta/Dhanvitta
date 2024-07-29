@@ -12,10 +12,23 @@ export default function OpenInterestPage() {
     const bankNiftyURL = '/api/openInterest';
     const indexDataURL = '/api/IndexStocksData';
     const [index, setIndex] = useState('niftyoichange');
+    const [symbol, setSymbol] = useState('nifty50');
+
 
 
     useEffect(() => {
         localStorage.setItem('index', index);
+        if (index == 'niftyoichange') {
+            localStorage.setItem('symbolType', 'nifty50');
+            setSymbol('nifty50');
+        }
+        else if (index == 'bankniftyoichange') {
+            localStorage.setItem('symbolType', 'niftybank');
+            setSymbol('niftybank');
+
+
+        }
+
         if (index) {
             mutateData1();
             mutateData2();
@@ -67,7 +80,7 @@ export default function OpenInterestPage() {
             <div className='w-full bg-slate-100'>
                 <div className='mx-auto w-11/12 h-screen '>
 
-                    <StockInfoCard data={data2} index={index} setIndex={setIndex} />
+                    <StockInfoCard data={data2} index={index} setIndex={setIndex} symbol={symbol} />
                     <StockInfodifferenceCard data={data1} />
                     <div className='flex flex-row flex-wrap mt-5'>
                         <StockChartRecharts data={data1?.resultData?.data} />
