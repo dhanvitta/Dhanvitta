@@ -10,7 +10,7 @@ import { IoRefreshSharp } from "react-icons/io5";
 
 function StockInfoCard({ data, index, setIndex, symbol, mutate }) {
 
-    console.log("mutate")
+    console.log("SYMBOL", Object.entries(data?.resultData?.[symbol] || {}).slice(0, 7))
     const [isAgree, setIsAgree] = useState(false);
 
     const options = [
