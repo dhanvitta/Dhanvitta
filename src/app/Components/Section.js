@@ -41,13 +41,11 @@ function Section() {
     return (
         <div className='w-11/12 mx-auto my-28 py-8 flex flex-col bg-white rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8'>
 
-            <div className='flex items-center justify-center '>
-                <div className='px-0'>
-                    <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl  font-medium leading-normal text-slate-700 mb-8 flex flex-col text-center ' >Accelerate your move to <span className='text-emerald-500 my-2  '>Dhanvitta</span> learning platform.</h1>
-                    <div className='w-full flex items-center justify-center'>
-                        <Link href="https://courses.dhanvitta.com">  <button className='mt-2 px-8  w-full h-14 rounded-2xl bg-emerald-500 hover:bg-emerald-500/80 text-md text-white '>Explore Now!</button> </Link>
-                    </div>
-
+            <div className='w-full flex flex-col items-center justify-center '>
+                <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl  font-medium leading-normal text-slate-700 mb-8 flex flex-col text-center ' >Accelerate your move to <span className='text-emerald-500 my-2  '>Dhanvitta</span> learning platform.</h1>
+                <div className='w-full flex items-center justify-center '>
+                    <iframe id='st_registerform_iframe' width='100%' height='780px' src="https://courses.dhanvitta.com/embedcourses?layout=type5&filter=all" name="iFrame Name" scrolling="Yes" className='border-0 w-full '></iframe>
+                    {/* <Link href="https://courses.dhanvitta.com">  <button className='mt-2 px-8  w-full h-14 rounded-2xl bg-emerald-500 hover:bg-emerald-500/80 text-md text-white '>Explore Now!</button> </Link> */}
                 </div>
             </div>
             {/* <div className='grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-12 z-10 sticky top-0 bg-white '>

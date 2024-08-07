@@ -9,7 +9,7 @@ function Footer() {
                 <div className='flex items-center flex-col w-fit'>
                     <Link className='w-fit  ' href='/'>
                         <div className='flex flex-col'>
-                            <div className='flex items-center flex-col w-28 rounded text-md font-medium py-2 text-white relative'> <FiTrendingUp className='text-xl mr-2 text-white' /> Dhanvitta <span className='text-[9px] absolute right-2 top-5'>TM</span></div>
+                            <div className='flex items-center flex-col w-28 rounded text-md font-medium py-2 text-white relative'> <FiTrendingUp className='text-xl mr-2 text-white' /> Dhanvitta <span className='text-lg absolute right-2 top-5'>®</span></div>
                         </div>
                     </Link>
                     <p className='text-gray-300 text-xs font-normal mt-1'>Copyright © 2024</p>
@@ -22,7 +22,7 @@ function Footer() {
                     <div className='text-white flex flex-row sm:flex-col flex-wrap gap-3'>
                         {/* <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>News</h6></Link> */}
                         <Link href='https://courses.dhanvitta.com/#/home'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Learn</h6></Link>
-                        <Link href='/oi-data'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>OI Data</h6></Link>
+                        <Link href='/signals'><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>signals</h6></Link>
                         {/* <Link href=''><h6 className='text-sm mb-3 hover:text-yellow-300 text-gray-300'>Blog</h6></Link> */}
                     </div>
                 </div>
