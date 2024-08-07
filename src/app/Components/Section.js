@@ -44,7 +44,7 @@ function Section() {
             <div className='w-full flex flex-col items-center justify-center '>
                 <h1 className='text-2xl xs:text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl  font-medium leading-normal text-slate-700 mb-8 flex flex-col text-center ' >Accelerate your move to <span className='text-emerald-500 my-2  '>Dhanvitta</span> learning platform.</h1>
                 <div className='w-full flex items-center justify-center '>
-                    <iframe id='st_registerform_iframe' width='100%' height='780px' src="https://courses.dhanvitta.com/embedcourses?layout=type5&filter=all" name="iFrame Name" scrolling="Yes" className='border-0 w-full '></iframe>
+                    <iframe id='st_registerform_iframe' width='100%' height='' src="https://courses.dhanvitta.com/embedcourses?layout=type5&filter=all" name="iFrame Name" scrolling="Yes" className='border-0 w-full h-[440px]'></iframe>
                     {/* <Link href="https://courses.dhanvitta.com">  <button className='mt-2 px-8  w-full h-14 rounded-2xl bg-emerald-500 hover:bg-emerald-500/80 text-md text-white '>Explore Now!</button> </Link> */}
                 </div>
             </div>
