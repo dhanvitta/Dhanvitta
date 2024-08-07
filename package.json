@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.40.1",
+    "@next/third-parties": "^14.2.5",
     "@notionhq/client": "^2.2.13",
     "@typeform/embed-react": "^3.2.0",
     "@vercel/analytics": "^1.2.2",
