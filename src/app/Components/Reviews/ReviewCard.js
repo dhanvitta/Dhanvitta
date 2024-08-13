@@ -7,9 +7,6 @@ function ReviewCard({ data = {} }) {
 
     const { name, message, ratings } = data;
 
-    const ratingChanged = (newRating) => {
-        console.log(newRating)
-    }
 
 
 
@@ -23,7 +20,7 @@ function ReviewCard({ data = {} }) {
             <ReactStars
                 count={5}
                 value={ratings}
-                onChange={ratingChanged}
+
                 size={22}
                 edit={false}
                 color2={'#facc15'} />

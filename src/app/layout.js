@@ -1,6 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/react"
+import GoogleAnalytics from './utils/GoogleAnalytics'
+// import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      {/* <GoogleTagManager gtmId="GTM-572RKSLF" /> */}
+      <body className={inter.className}>
+        <GoogleAnalytics />
+
+        {children}
+
         <Analytics />
 
       </body>

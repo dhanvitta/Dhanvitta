@@ -19,7 +19,7 @@ function Header() {
                         <Link href='/signals'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Signals</p></Link>
                         <Link href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-800 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>All Courses</p></Link>
                         {/* <Link href='/blogs'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Blogs</p></Link> */}
-                        {/* <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link> */}
+                        <Link href='/news'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>News</p></Link>
                         <Link href='https://courses.dhanvitta.com/#/contact'> <p className='hover:text-gray-900 hover:underline hover:underline-offset-8 hover:decoration-wavy mr-6 cursor-pointer'>Contact Us</p></Link>
 
                     </div>
@@ -49,7 +49,7 @@ function Header() {
                                 <Link className='w-full' href='/signals'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>Signals</p></Link>
                                 <Link className='w-full' href='https://courses.dhanvitta.com/#/allcourses'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>All Courses</p></Link>
 
-                                {/* <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link> */}
+                                <Link className='w-full' href='/news'> <p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>News</p></Link>
                                 {/* <Link className='w-full' href='/blogs'><p className='hover:text-gray-900   w-full py-7 text-lg border-b cursor-pointer'>Blogs</p></Link> */}
                                 <Link className='w-full' href='/'><p className='hover:text-gray-900  w-full  py-7 text-lg border-b cursor-pointer'>About Us</p></Link>
                                 <Link className='w-full' href='https://courses.dhanvitta.com/#/contact'><p className='hover:text-gray-900  w-full py-7 text-lg border-b cursor-pointer'>Contact Us</p></Link>

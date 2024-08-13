@@ -19,10 +19,11 @@ function MyComponent() {
         } else {
             async function fetchData() {
                 const category = 'business';
-                const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=100&apikey=${apikey}`;
+                const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&max=100&apikey=${apikey}`;
 
                 const response = await fetch(url);
                 const data = await response.json();
+                console.log(data)
                 setData(data);
                 // Save data to cache
                 const cacheData = { data, timestamp: Date.now() };
