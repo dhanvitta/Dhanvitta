@@ -68,7 +68,7 @@ export default function OpenInterestPage() {
 
     if (isValidating1 || isValidating2) return (
         <div className="h-screen w-full flex items-center justify-center text-2xl animate-pulse flex-col">
-            Fetching Open Interest Data ...
+            Fetching Dhanvitta Signals ...
             <span className="rounded-md bg-gray-900 text-white mt-5 animate-spin h-6 w-6"></span>
         </div>
     );
