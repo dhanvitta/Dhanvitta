@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import MiniCards from "./MiniCards";
 
 function StockInfodifferenceCard({ data }) {
+    console.log("Difference", data)
     const [ce, setCe] = useState(0);
     const [pe, setPe] = useState(0);
     const [doi, setDoi] = useState(0);
