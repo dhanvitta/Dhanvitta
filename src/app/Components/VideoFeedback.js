@@ -29,9 +29,7 @@ function VideoFeedback() {
                         <iframe src="https://drive.google.com/file/d/1NBnmynPWEN91dzyHXt5KzwOUXLlhBBa9/preview" width="" height="" allow="autoplay" poster='.\ public\ image.jpg' className='h-48 w-80 rounded-2xl '></iframe>
                         < iframe src="https://drive.google.com/file/d/1XxQu1lTjGGbAx2r3dRcVoer9nqn65k8h/preview" width="" height="" allow="autoplay" poster='.\public\image.jpg' className='h-48 w-80 rounded-2xl' ></iframe >
                         <iframe src="https://drive.google.com/file/d/1KBKCJeupjw8vIVTKI8FA7OihZ65OaqBZ/preview" width="" height="" allow="autoplay" poster='.\public\image.jpg' className='h-48 w-80 rounded-2xl'></iframe>
-                        {/* <Image src='https://drive.google.com/thumbnail?id=13iIIZlf3BfQQMKIwP_diSqsxSenmKN41&sz=w1000' height={100} width={100} className="h-80 w-1/3 " alt="image" quality={'high'} />
-                <Image src='https://drive.google.com/thumbnail?id=13iIIZlf3BfQQMKIwP_diSqsxSenmKN41&sz=w1000' height={100} width={100} className="h-80 w-1/3 " alt="image" quality={'high'} />
-                <Image src='https://drive.google.com/thumbnail?id=13iIIZlf3BfQQMKIwP_diSqsxSenmKN41&sz=w1000' height={100} width={100} className="h-80 w-1/3 " alt="image" quality={'high'} /> */}
+                    
                     </div >
 
                 </div>
