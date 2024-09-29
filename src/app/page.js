@@ -6,6 +6,7 @@ import HeroSection from '@/app/Components/HeroSection'
 import LearnSection from '@/app/Components/LearnSection'
 import React from 'react'
 import CoursesSection from './Components/CoursesSection';
+import Featured from './Components/Featured';
 import Reviews from './Components/Reviews';
 import Section from './Components/Section';
 import SectionDetails from './Components/SectionDetails';
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <Reviews />
       <CoursesSection />
+      <Featured />
       {/* <VideoFeedback /> */}
       <SectionDetails />
       <Section />

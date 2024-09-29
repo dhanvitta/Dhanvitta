@@ -269,7 +269,7 @@ function SectionDetails() {
 
 
     return (
-        <div className='w-11/12 mx-auto my-28 py-8 flex flex-col bg-slate-50 rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]'>
+        <div className='w-11/12 mx-auto my-16 py-6 flex flex-col bg-slate-50 rounded-3xl px-1 sm:px-2 md:px-8 lg:px-8 xl:px-8 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]'>
             <div className=' rounded-2xl px-6 py-12 flex flex-col items-start justify-start '>
 
                 <div className='px-0 mb-12'>
