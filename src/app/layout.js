@@ -16,6 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <GoogleTagManager gtmId="GTM-572RKSLF" /> */}
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
+        <meta name="theme-color" content="#000" />
+      </head>
       <body className={inter.className}>
         <GoogleAnalytics />
 
