@@ -16,7 +16,7 @@ function Featured() {
                             <Image src={"https://getlogo.net/wp-content/uploads/2020/04/moneycontrol-logo-vector.png"} width={450}
                                 height={450}
                                 alt="Money controll dhanvitta" className="object-cover w-72 mix-blend-multiply" />
-                            <h1 className='text-xl text-slate-700 my-1 text-left'>We&apos;ve been recognized by Moneycontrol, one of the most trusted financial news platforms. This recognition reinforces our commitment to providing exceptional services to all our users.</h1>
+                            <h1 className='text-xl text-slate-700 my-1 text-left'>We&apos;ve been recognized by Moneycontrol, one of the most trusted platforms. This recognition reinforces our commitment to providing exceptional services to all our users.</h1>
                         </div >
                     </div>
                 </div >
