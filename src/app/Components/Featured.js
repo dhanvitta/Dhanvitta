@@ -13,11 +13,11 @@ function Featured() {
                     </div>
 
                     <div className=' flex flex-col  flex-wrap gap-8 mt-8'>
-                        <div className='flex flex-col xs:flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col  items-start justify-center gap-2'>
-                            <Image src={"https://getlogo.net/wp-content/uploads/2020/04/moneycontrol-logo-vector.png"} width={400}
-                                height={350}
-                                alt="Money controll dhanvitta" className="object-cover w-64 mix-blend-multiply" />
-                            <h1 className='text-2xl text-slate-600 my-1 text-left'>We&apos;ve been recognized by Moneycontrol, one of the most trusted financial news platforms. This recognition reinforces our commitment to providing exceptional services to all our users.</h1>
+                        <div className='flex flex-col xs:flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row  items-center justify-center gap-8'>
+                            <Image src={"https://getlogo.net/wp-content/uploads/2020/04/moneycontrol-logo-vector.png"} width={450}
+                                height={450}
+                                alt="Money controll dhanvitta" className="object-cover w-72 mix-blend-multiply" />
+                            <h1 className='text-xl text-slate-700 my-1 text-left'>We&apos;ve been recognized by Moneycontrol, one of the most trusted platforms. This recognition reinforces our commitment to providing exceptional services to all our users.</h1>
                         </div >
                         <Link href={'https://www.moneycontrol.com/news/brand-connect/dhanvitta-the-mangalore-based-startup-revolutionizes-trading-with-rachans-master-strategy-12811029.html'} target="_blank"> <button className='mt-4 px-6  w-full xs:w-full sm:w-full md:w-full lg:w-56 xl:w-48 h-14 rounded-2xl bg-emerald-600 hover:bg-emerald-600/90 text-md text-white'>Read Article</button></Link>
                     </div>
