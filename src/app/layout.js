@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import GoogleAnalytics from './utils/GoogleAnalytics'
 // import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <GoogleAnalytics />
+        <SpeedInsights />
 
         {children}
 
