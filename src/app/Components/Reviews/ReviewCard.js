@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import ReactStars from 'react-stars'
+import dynamic from 'next/dynamic';
+
+const ReactStars = dynamic(() => import('react-stars'), { ssr: false });
 
 function ReviewCard({ data = {} }) {
 

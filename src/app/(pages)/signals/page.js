@@ -6,6 +6,15 @@ import { StockChartRecharts, OpenInterestChart } from '@/app/Components/Stocks/S
 import Header from '@/app/Components/Header';
 import StockInfoCard from '@/app/Components/Stocks/StockInfoCard';
 import StockInfodifferenceCard from '@/app/Components/Stocks/StockInfoDifferenceCard';
+import {
+    ClerkProvider,
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton,
+    SignIn,
+    RedirectToSignIn
+  } from '@clerk/nextjs'
 
 export default function OpenInterestPage() {
 
@@ -76,20 +85,52 @@ export default function OpenInterestPage() {
 
     return (
         <React.Fragment>
-
+        <ClerkProvider>
             <Header />
-            <div className='w-full bg-slate-100'>
-                <div className='mx-auto w-11/12 h-screen '>
-
-                    <StockInfoCard data={data2} index={index} setIndex={setIndex} symbol={symbol} mutate={{ mutateData1, mutateData2 }} />
-                    <StockInfodifferenceCard data={data1} />
-                    <div className='flex flex-row flex-wrap mt-5'>
-                        <StockChartRecharts data={data1?.resultData?.data} />
-                        {/* <OpenInterestChart data={dataOI} /> */}
+            {/* <SignIn /> */}
+        
+            <div className='w-full relative mt-5 '>
+                <div className='mx-auto w-11/12 h-screen rounded-3xl '>
+                    
+                    <div className='bg-white rounded-xl flex items-center justify-end py-3 px-2 '>
+                    <SignedOut>
+                        <SignInButton mode='modal' forceRedirectUrl='/signals'>
+                            <button className='bg-emerald-700 text-white px-4 py-1.5 rounded-sm text-sm'>Sign in</button>
+                        </SignInButton>
+                    </SignedOut>
+                    <UserButton >
+                        
+                    </UserButton>
                     </div>
+
+                    <SignedIn>
+                        <StockInfoCard data={data2} index={index} setIndex={setIndex} symbol={symbol} mutate={{ mutateData1, mutateData2 }} />
+                        <StockInfodifferenceCard data={data1} />
+                        <div className='flex flex-row flex-wrap mt-5'>
+                            <StockChartRecharts data={data1?.resultData?.data} />
+                            {/* <OpenInterestChart data={dataOI} /> */}
+                        </div>
+                    </SignedIn>
+
+                    <SignedOut>
+                        <div className='rounded-4xl w-full h-1/2 p-8 flex items-center justify-start bg-white inset-0 bg-[radial-gradient(#86efac_2px,transparent_2px)] [background-size:32px_32px]'>
+                            <div className="rounded-2xl  ">
+                            <h1 className=' text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl  font-semibold text-emerald-800 rounded-sm bg-emerald-300 w-fit p-3' >Real-Time Signals  </h1>
+                            <h1 className=' text-xl xs:text-xl sm:text-xl md:text-xl lg:text-4xl xl:text-4xl  font-semibold text-emerald-700 bg-white p-3 w-fit ' >Sign In Now to Unlock Exclusive Access! </h1>
+                            <h1 className=' text-xl xs:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl  font-normal text-emerald-600 bg-white p-3 w-fit ' >Join a growing community of traders who have benefited from our consistent and actionable market signals.</h1>
+
+                            <SignedOut>
+                        <SignInButton mode='modal' forceRedirectUrl='/signals'>
+                            <button className='bg-emerald-700 text-white px-7 py-2 rounded-sm text-md mt-10'>Explore Features </button>
+                        </SignInButton>
+                    </SignedOut>
+                            </div>
+                        </div>
+                    </SignedOut>
                     {/* <StockTable data={data1?.data} /> */}
                 </div>
             </div>
+            </ClerkProvider>
         </React.Fragment>
     );
 }
