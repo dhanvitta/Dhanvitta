@@ -92,10 +92,10 @@ export default function OpenInterestPage() {
             <div className='w-full relative mt-5 '>
                 <div className='mx-auto w-11/12 h-screen rounded-3xl '>
                     
-                    <div className='bg-white rounded-xl flex items-center justify-end py-3 px-2 '>
+                    <div className='bg-white rounded-lg flex items-center justify-end py-3 px-2 '>
                     <SignedOut>
                         <SignInButton mode='modal' forceRedirectUrl='/signals'>
-                            <button className='bg-emerald-700 text-white px-4 py-1.5 rounded-sm text-sm'>Sign in</button>
+                            <button className='bg-emerald-700 text-white px-4 py-1.5 rounded-sm text-xs'>Sign in</button>
                         </SignInButton>
                     </SignedOut>
                     <UserButton >
@@ -115,13 +115,13 @@ export default function OpenInterestPage() {
                     <SignedOut>
                         <div className='rounded-4xl w-full h-1/2 p-8 flex items-center justify-start bg-white inset-0 bg-[radial-gradient(#86efac_2px,transparent_2px)] [background-size:32px_32px]'>
                             <div className="rounded-2xl  ">
-                            <h1 className=' text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl  font-semibold text-emerald-800 rounded-sm bg-emerald-300 w-fit p-3' >Real-Time Signals  </h1>
-                            <h1 className=' text-xl xs:text-xl sm:text-xl md:text-xl lg:text-4xl xl:text-4xl  font-semibold text-emerald-700 bg-white p-3 w-fit ' >Sign In Now to Unlock Exclusive Access! </h1>
-                            <h1 className=' text-xl xs:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl  font-normal text-emerald-600 bg-white p-3 w-fit ' >Join a growing community of traders who have benefited from our consistent and actionable market signals.</h1>
+                            <h1 className=' text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl  font-semibold text-emerald-800 rounded-sm bg-emerald-300 w-fit p-3' >Real-Time Signals  </h1>
+                            <h1 className=' text-lg xs:text-xl sm:text-xl md:text-xl lg:text-4xl xl:text-4xl  font-semibold text-emerald-700 bg-white p-3 w-fit ' >Sign In Now to Unlock Exclusive Access! </h1>
+                            <h1 className=' text-sm xs:text-sm sm:text-sm md:text-lg lg:text-2xl xl:text-2xl  font-normal text-emerald-600 bg-white p-3 w-fit ' >Join a growing community of traders who have benefited from our consistent and actionable market signals.</h1>
 
                             <SignedOut>
                         <SignInButton mode='modal' forceRedirectUrl='/signals'>
-                            <button className='bg-emerald-700 text-white px-7 py-2 rounded-sm text-md mt-10'>Explore Features </button>
+                            <button className='bg-emerald-700 text-white px-4 py-2 rounded-md text-sm mt-8'>Explore Features </button>
                         </SignInButton>
                     </SignedOut>
                             </div>

@@ -51,7 +51,7 @@ function Header() {
             <div className='top-0 sticky z-50 flex flex-col sm:flex sm:flex-col md:flex md:flex-col lg:hidden xl:hidden items-start  py-6 font-normal w-full mx-auto px-6 bg-white'>
                 <div className='w-full flex flex-row items-center justify-between'>
                     <div className='text-1xl font-semibold '>
-                        <Link className='w-full flex flex-start' href='/'><div className='flex items-center flex-col text-md font-medium'> <FiTrendingUp className='text-xl mr-2 text-gray-900' /> Dhanvitta</div></Link></div >
+                        <Link className='w-full flex flex-start' href='/'><div className='flex items-center flex-col text-sm font-medium'> <FiTrendingUp className='text-md mr-2 text-gray-900' /> Dhanvitta</div></Link></div >
                     {!toggleState ? <FiAlignRight className='text-3xl font-normal' onClick={toggle} /> : <FiX className='text-3xl font-normal' onClick={toggle} />}
                 </div >
                 {
