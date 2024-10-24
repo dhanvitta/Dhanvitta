@@ -98,9 +98,8 @@ export default function OpenInterestPage() {
                             <button className='bg-emerald-700 text-white px-4 py-1.5 rounded-sm text-xs'>Sign in</button>
                         </SignInButton>
                     </SignedOut>
-                    <UserButton >
-                        
-                    </UserButton>
+                    <UserButton  afterSignOutUrl='/signals' />
+           
                     </div>
 
                     <SignedIn>
